@@ -1,50 +1,52 @@
 # DQC-Switch-QNet
 
-This repository implements the phased simulator stack requested by the `DQC_switch_qnet.pdf` design document:
+This repository implements the switch-networked QDC simulator and paper-style evaluation pipeline described by the new design specification.
 
-- Phase 1: simulator core with hierarchical QDC topology, switch reconfiguration state, EPR inventory/buffer accounting, and DAG execution.
-- Phase 2: minimal baselines with random placement, average placement, and direct-only scheduling.
-- Phase 3: rack-aware greedy placement and unified JIT scheduling.
-- Phase 4: split-assisted cross-rack communication.
-- Phase 5: collective in-rack batching.
-- Phase 6: optional intra-rack distillation support.
-- Phase 7: experiment scripts for representative, benchmark, ablation, scaling, and sensitivity studies.
+## Experiment organization
+
+The experiment suite is organized in the same *evaluation progression* style requested by the user, while keeping the QDC model/algorithms grounded in the new specification rather than the old UNIQ formulation:
+
+1. **Evaluation Setup**: architecture profiles, benchmark families, baseline definitions, and experiment metadata.
+2. **Representative Example**: interpretable event timeline plus resource-usage view.
+3. **Algorithm-Level Comparison**: synthetic workloads across small / medium / large / very large scales.
+4. **Benchmark-Style Comparison**: MCT / QFT / Grover / RCA families under matched QDC settings.
+5. **Resource Sensitivity**: data qubits, communication qubits, buffers, and latency/look-ahead knobs.
+6. **Topology / Architecture Comparison**: multiple switch-networked QDC architectures with topology visualization.
+7. **Framework-Level Comparison**: full-pipeline comparison across multiple metrics.
+8. **Optional Scaling / Overhead Analysis**: compilation/runtime trends and overhead breakdowns.
 
 ## Repository layout
 
-- `configs/`: static experiment and topology settings.
-- `src/qdc_project/circuit/`: DAG data structures and workload loaders/generators.
-- `src/qdc_project/topology/`: QDC topology and switch model.
-- `src/qdc_project/model/`: simulator state, metrics, and invariant checks.
-- `src/qdc_project/algorithms/`: baseline and unified placement/scheduling policies.
-- `src/qdc_project/simulation/`: execution engine, events, and CSV logger.
-- `src/qdc_project/plotting/`: CSV/SVG/Markdown export helpers for schedules, tables, bar charts, and heatmaps.
-- `src/qdc_project/experiments/`: runnable experiment entry points.
-- `tests/`: invariant-focused unit tests.
+- `configs/`: experiment-suite settings.
+- `src/qdc_project/circuit/`: DAG utilities, synthetic workloads, and benchmark-family generators.
+- `src/qdc_project/topology/`: QDC topology core plus named architecture profiles.
+- `src/qdc_project/model/`: simulator state, metrics, and invariants.
+- `src/qdc_project/algorithms/`: placement/scheduling policies.
+- `src/qdc_project/plotting/`: output helpers for tables, schedule/resource plots, and topology diagrams.
+- `src/qdc_project/experiments/`: evaluation scripts following the paper-style progression.
+- `outputs/`: generated result tables and figures.
+
+## First 5 figures implemented
+
+1. Representative schedule timeline (`outputs/representative/*_gantt.svg`)
+2. Representative communication/EPR resource usage (`outputs/representative/*_resource_usage.svg`)
+3. Benchmark average runtime comparison (`outputs/benchmarks/benchmark_runtime.svg`)
+4. Scaling runtime heatmap (`outputs/scaling/scaling_runtime.svg`)
+5. Topology visualization panels (`outputs/topology_comparison/*.svg`)
 
 ## Run
 
 ```bash
 PYTHONPATH=src python -m qdc_project.experiments.run_representative
+PYTHONPATH=src python -m qdc_project.experiments.run_algorithm_comparison
 PYTHONPATH=src python -m qdc_project.experiments.run_benchmarks
-PYTHONPATH=src python -m qdc_project.experiments.run_ablation
-PYTHONPATH=src python -m qdc_project.experiments.run_scaling
 PYTHONPATH=src python -m qdc_project.experiments.run_sensitivity
+PYTHONPATH=src python -m qdc_project.experiments.run_topology_comparison
+PYTHONPATH=src python -m qdc_project.experiments.run_framework_comparison
 PYTHONPATH=src pytest
 ```
 
-## Output artifacts
+## Notes
 
-Each experiment now emits:
-
-- raw CSV summaries,
-- Markdown tables for quick inspection,
-- SVG figures for schedule views, runtime bar charts, and heatmaps.
-
-## Notes on runtime
-
-The simulator is event-driven and currently configured for small-to-medium benchmark sweeps so it still runs quickly on this machine. To make timing comparisons less trivial, the benchmark, scaling, and sensitivity scripts now use larger topologies/workloads and multiple seeds rather than one tiny instance.
-
-## Notes on dependencies
-
-The implementation remains runnable with only the Python standard library and `pytest`. Qiskit loading is still exposed as a hook in `loaders.py`; richer third-party plotting can be added later if desired.
+- The simulator remains event-driven and explicit about switch reconfiguration, EPR generation/consumption, and buffer accounting.
+- In this environment, `matplotlib` is not installable due package-repository/network restrictions, so the generated figures are exported as deterministic SVGs from simulator outputs rather than through matplotlib. The experiment organization and figure logic still follow the requested paper-style progression.

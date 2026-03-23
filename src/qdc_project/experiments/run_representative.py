@@ -8,6 +8,7 @@ from qdc_project.algorithms.scheduler_unified import UnifiedSchedulerConfig
 from qdc_project.circuit.loaders import load_handcrafted_representative
 from qdc_project.plotting.barplots import write_markdown_table
 from qdc_project.plotting.gantt import write_gantt_svg, write_text_gantt
+from qdc_project.plotting.resource_usage import write_resource_usage_svg
 from qdc_project.simulation.engine import SimulationEngine
 from qdc_project.simulation.logger import SimulationLogger
 from qdc_project.topology.qdc_topology import QDCTopology, TopologyConfig
@@ -52,6 +53,7 @@ def main() -> None:
         rows.append(row)
         write_text_gantt(output_dir / f"{name}_gantt.csv", state)
         write_gantt_svg(output_dir / f"{name}_gantt.svg", state, title=f"Representative schedule: {name}")
+        write_resource_usage_svg(output_dir / f"{name}_resource_usage.svg", state, title=f"Representative resource usage: {name}")
 
     logger.write_csv(output_dir / "summary.csv", rows)
     write_markdown_table(

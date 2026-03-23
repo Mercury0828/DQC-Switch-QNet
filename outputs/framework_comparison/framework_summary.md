@@ -1,0 +1,10 @@
+| family | framework | runtime | solver_time_seconds | cross_rack_epr | wait_time | peak_buffer |
+| --- | --- | --- | --- | --- | --- | --- |
+| mct | stagewise_direct | 48 | 0.0 | 3 | 69.0 | 2 |
+| mct | full_framework | 36 | 0.0016751369998928567 | 0 | 70.0 | 6 |
+| qft | stagewise_direct | 136 | 0.0 | 20 | 36.0 | 2 |
+| qft | full_framework | 65 | 0.0007126999998945394 | 0 | 26.0 | 6 |
+| grover | stagewise_direct | 82 | 0.0 | 6 | 32.0 | 2 |
+| grover | full_framework | 51 | 0.0006254909999370284 | 0 | 55.0 | 6 |
+| rca | stagewise_direct | 39 | 0.0 | 3 | 0.0 | 2 |
+| rca | full_framework | 21 | 0.0001990499999919848 | 0 | 0.0 | 6 |
