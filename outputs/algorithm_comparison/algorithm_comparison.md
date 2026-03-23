@@ -1,0 +1,14 @@
+| scale | method | runtime | objective_value | solver_time_seconds |
+| --- | --- | --- | --- | --- |
+| small | random_direct | 80 | 92.0 | 0.0 |
+| small | stagewise_direct | 57 | 69.0 | 0.0 |
+| small | full_method | 31 | 31.0 | 0.00046359099997062003 |
+| medium | random_direct | 105 | 111.0 | 0.0 |
+| medium | stagewise_direct | 101 | 117.0 | 0.0 |
+| medium | full_method | 52 | 52.0 | 0.028104005999921355 |
+| large | random_direct | 115 | 129.0 | 0.0 |
+| large | stagewise_direct | 118 | 136.0 | 0.0 |
+| large | full_method | 50 | 50.0 | 0.0012028959999952349 |
+| very_large | random_direct | 136 | 150.0 | 0.0 |
+| very_large | stagewise_direct | 132 | 160.0 | 0.0 |
+| very_large | full_method | 64 | 64.0 | 0.001594981999915035 |

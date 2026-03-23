@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420">
+<style>text {font-family: Arial, Helvetica, sans-serif; font-size: 12px;} .title {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold;} .subtitle {font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;}</style>
+<text class="title" x="600.0" y="24" text-anchor="middle">Fig. 8 style: Representative switch-networked QDC example</text>
+<rect x="50" y="60" width="520" height="300" fill="white" stroke="#333" />
+<line x1="50" y1="120.0" x2="570" y2="120.0" stroke="#e5e5e5" />
+<line x1="50" y1="180.0" x2="570" y2="180.0" stroke="#e5e5e5" />
+<line x1="50" y1="240.0" x2="570" y2="240.0" stroke="#e5e5e5" />
+<line x1="50" y1="300.0" x2="570" y2="300.0" stroke="#e5e5e5" />
+<text class="subtitle" x="310.0" y="52" text-anchor="middle">Scheduling / communication timeline</text>
+<text x="310.0" y="388" text-anchor="middle">Time</text>
+<text x="8" y="210.0" transform="rotate(-90 8,210.0)" text-anchor="middle">Event index</text>
+<rect x="50.0" y="345.0" width="26.0" height="10" fill="#e74c3c" />
+<rect x="76.0" y="330.0" width="4.0" height="10" fill="#999" />
+<rect x="76.0" y="315.0" width="52.0" height="10" fill="#2e86de" />
+<rect x="128.0" y="300.0" width="52.0" height="10" fill="#2e86de" />
+<rect x="180.0" y="285.0" width="52.0" height="10" fill="#8e44ad" />
+<rect x="232.0" y="270.0" width="4.0" height="10" fill="#16a085" />
+<rect x="232.0" y="255.0" width="26.0" height="10" fill="#e74c3c" />
+<rect x="258.0" y="240.0" width="4.0" height="10" fill="#999" />
+<rect x="258.0" y="225.0" width="52.0" height="10" fill="#2e86de" />
+<rect x="310.0" y="210.0" width="52.0" height="10" fill="#2e86de" />
+<rect x="362.0" y="195.0" width="52.0" height="10" fill="#8e44ad" />
+<rect x="414.0" y="180.0" width="4.0" height="10" fill="#16a085" />
+<rect x="414.0" y="165.0" width="26.0" height="10" fill="#e74c3c" />
+<rect x="440.0" y="150.0" width="26.0" height="10" fill="#e74c3c" />
+<rect x="466.0" y="135.0" width="52.0" height="10" fill="#2e86de" />
+<rect x="518.0" y="120.0" width="4.0" height="10" fill="#16a085" />
+<rect x="518.0" y="105.0" width="26.0" height="10" fill="#e74c3c" />
+<rect x="544.0" y="90.0" width="26.0" height="10" fill="#e74c3c" />
+<rect x="640" y="60" width="500" height="300" fill="white" stroke="#333" />
+<line x1="640" y1="120.0" x2="1140" y2="120.0" stroke="#e5e5e5" />
+<line x1="640" y1="180.0" x2="1140" y2="180.0" stroke="#e5e5e5" />
+<line x1="640" y1="240.0" x2="1140" y2="240.0" stroke="#e5e5e5" />
+<line x1="640" y1="300.0" x2="1140" y2="300.0" stroke="#e5e5e5" />
+<text class="subtitle" x="890.0" y="52" text-anchor="middle">Communication / EPR usage over time</text>
+<text x="890.0" y="388" text-anchor="middle">Time</text>
+<text x="598" y="210.0" transform="rotate(-90 598,210.0)" text-anchor="middle">Occupancy</text>
+<circle cx="640.0" cy="360.0" r="3" fill="#2e86de" />
+<circle cx="723.3" cy="360.0" r="3" fill="#2e86de" />
+<circle cx="723.3" cy="210.0" r="3" fill="#2e86de" />
+<circle cx="778.9" cy="210.0" r="3" fill="#2e86de" />
+<circle cx="778.9" cy="210.0" r="3" fill="#2e86de" />
+<circle cx="834.4" cy="210.0" r="3" fill="#2e86de" />
+<circle cx="834.4" cy="210.0" r="3" fill="#2e86de" />
+<circle cx="917.8" cy="210.0" r="3" fill="#2e86de" />
+<circle cx="917.8" cy="60.0" r="3" fill="#2e86de" />
+<circle cx="973.3" cy="60.0" r="3" fill="#2e86de" />
+<circle cx="973.3" cy="60.0" r="3" fill="#2e86de" />
+<circle cx="1028.9" cy="60.0" r="3" fill="#2e86de" />
+<circle cx="1028.9" cy="60.0" r="3" fill="#2e86de" />
+<circle cx="1140.0" cy="60.0" r="3" fill="#2e86de" />
+<circle cx="1140.0" cy="60.0" r="3" fill="#2e86de" />
+<polyline fill="none" stroke="#2e86de" stroke-width="2" points="640.0,360.0 723.3,360.0 723.3,210.0 778.9,210.0 778.9,210.0 834.4,210.0 834.4,210.0 917.8,210.0 917.8,60.0 973.3,60.0 973.3,60.0 1028.9,60.0 1028.9,60.0 1140.0,60.0 1140.0,60.0" />
+<line x1="1020" y1="70" x2="1034" y2="70" stroke="#2e86de" stroke-width="2" />
+<text x="1040" y="74">EPR occupancy</text>
+</svg>

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900">
+<style>text {font-family: Arial, Helvetica, sans-serif; font-size: 12px;} .title {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold;} .subtitle {font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;}</style>
+<text class="title" x="600.0" y="24" text-anchor="middle">Fig. 10 style: Resource sensitivity across benchmark families</text>
+<rect x="50" y="60" width="500" height="320" fill="white" stroke="#333" />
+<line x1="50" y1="124.0" x2="550" y2="124.0" stroke="#e5e5e5" />
+<line x1="50" y1="188.0" x2="550" y2="188.0" stroke="#e5e5e5" />
+<line x1="50" y1="252.0" x2="550" y2="252.0" stroke="#e5e5e5" />
+<line x1="50" y1="316.0" x2="550" y2="316.0" stroke="#e5e5e5" />
+<text class="subtitle" x="300.0" y="52" text-anchor="middle">MCT family</text>
+<text x="300.0" y="408" text-anchor="middle">Communication qubits per QPU</text>
+<text x="8" y="220.0" transform="rotate(-90 8,220.0)" text-anchor="middle">Objective</text>
+<circle cx="50.0" cy="380.0" r="3" fill="#4E79A7" />
+<circle cx="216.7" cy="380.0" r="3" fill="#4E79A7" />
+<circle cx="383.3" cy="380.0" r="3" fill="#4E79A7" />
+<circle cx="550.0" cy="380.0" r="3" fill="#4E79A7" />
+<polyline fill="none" stroke="#4E79A7" stroke-width="2" points="50.0,380.0 216.7,380.0 383.3,380.0 550.0,380.0" />
+<line x1="430" y1="70" x2="444" y2="70" stroke="#4E79A7" stroke-width="2" />
+<text x="450" y="74">full_method</text>
+<circle cx="50.0" cy="131.1" r="3" fill="#F28E2B" />
+<circle cx="216.7" cy="172.6" r="3" fill="#F28E2B" />
+<circle cx="383.3" cy="60.0" r="3" fill="#F28E2B" />
+<circle cx="550.0" cy="107.4" r="3" fill="#F28E2B" />
+<polyline fill="none" stroke="#F28E2B" stroke-width="2" points="50.0,131.1 216.7,172.6 383.3,60.0 550.0,107.4" />
+<line x1="430" y1="88" x2="444" y2="88" stroke="#F28E2B" stroke-width="2" />
+<text x="450" y="92">random_direct</text>
+<circle cx="50.0" cy="220.0" r="3" fill="#59A14F" />
+<circle cx="216.7" cy="220.0" r="3" fill="#59A14F" />
+<circle cx="383.3" cy="220.0" r="3" fill="#59A14F" />
+<circle cx="550.0" cy="220.0" r="3" fill="#59A14F" />
+<polyline fill="none" stroke="#59A14F" stroke-width="2" points="50.0,220.0 216.7,220.0 383.3,220.0 550.0,220.0" />
+<line x1="430" y1="106" x2="444" y2="106" stroke="#59A14F" stroke-width="2" />
+<text x="450" y="110">stagewise_direct</text>
+<rect x="640" y="60" width="500" height="320" fill="white" stroke="#333" />
+<line x1="640" y1="124.0" x2="1140" y2="124.0" stroke="#e5e5e5" />
+<line x1="640" y1="188.0" x2="1140" y2="188.0" stroke="#e5e5e5" />
+<line x1="640" y1="252.0" x2="1140" y2="252.0" stroke="#e5e5e5" />
+<line x1="640" y1="316.0" x2="1140" y2="316.0" stroke="#e5e5e5" />
+<text class="subtitle" x="890.0" y="52" text-anchor="middle">QFT family</text>
+<text x="890.0" y="408" text-anchor="middle">Communication qubits per QPU</text>
+<text x="598" y="220.0" transform="rotate(-90 598,220.0)" text-anchor="middle">Objective</text>
+<circle cx="640.0" cy="380.0" r="3" fill="#4E79A7" />
+<circle cx="806.7" cy="380.0" r="3" fill="#4E79A7" />
+<circle cx="973.3" cy="380.0" r="3" fill="#4E79A7" />
+<circle cx="1140.0" cy="380.0" r="3" fill="#4E79A7" />
+<polyline fill="none" stroke="#4E79A7" stroke-width="2" points="640.0,380.0 806.7,380.0 973.3,380.0 1140.0,380.0" />
+<line x1="1020" y1="70" x2="1034" y2="70" stroke="#4E79A7" stroke-width="2" />
+<text x="1040" y="74">full_method</text>
+<circle cx="640.0" cy="172.6" r="3" fill="#F28E2B" />
+<circle cx="806.7" cy="60.0" r="3" fill="#F28E2B" />
+<circle cx="973.3" cy="86.8" r="3" fill="#F28E2B" />
+<circle cx="1140.0" cy="95.8" r="3" fill="#F28E2B" />
+<polyline fill="none" stroke="#F28E2B" stroke-width="2" points="640.0,172.6 806.7,60.0 973.3,86.8 1140.0,95.8" />
+<line x1="1020" y1="88" x2="1034" y2="88" stroke="#F28E2B" stroke-width="2" />
+<text x="1040" y="92">random_direct</text>
+<circle cx="640.0" cy="161.9" r="3" fill="#59A14F" />
+<circle cx="806.7" cy="161.9" r="3" fill="#59A14F" />
+<circle cx="973.3" cy="161.9" r="3" fill="#59A14F" />
+<circle cx="1140.0" cy="161.9" r="3" fill="#59A14F" />
+<polyline fill="none" stroke="#59A14F" stroke-width="2" points="640.0,161.9 806.7,161.9 973.3,161.9 1140.0,161.9" />
+<line x1="1020" y1="106" x2="1034" y2="106" stroke="#59A14F" stroke-width="2" />
+<text x="1040" y="110">stagewise_direct</text>
+<rect x="50" y="470" width="500" height="320" fill="white" stroke="#333" />
+<line x1="50" y1="534.0" x2="550" y2="534.0" stroke="#e5e5e5" />
+<line x1="50" y1="598.0" x2="550" y2="598.0" stroke="#e5e5e5" />
+<line x1="50" y1="662.0" x2="550" y2="662.0" stroke="#e5e5e5" />
+<line x1="50" y1="726.0" x2="550" y2="726.0" stroke="#e5e5e5" />
+<text class="subtitle" x="300.0" y="462" text-anchor="middle">GROVER family</text>
+<text x="300.0" y="818" text-anchor="middle">Communication qubits per QPU</text>
+<text x="8" y="630.0" transform="rotate(-90 8,630.0)" text-anchor="middle">Objective</text>
+<circle cx="50.0" cy="790.0" r="3" fill="#4E79A7" />
+<circle cx="216.7" cy="790.0" r="3" fill="#4E79A7" />
+<circle cx="383.3" cy="790.0" r="3" fill="#4E79A7" />
+<circle cx="550.0" cy="790.0" r="3" fill="#4E79A7" />
+<polyline fill="none" stroke="#4E79A7" stroke-width="2" points="50.0,790.0 216.7,790.0 383.3,790.0 550.0,790.0" />
+<line x1="430" y1="480" x2="444" y2="480" stroke="#4E79A7" stroke-width="2" />
+<text x="450" y="484">full_method</text>
+<circle cx="50.0" cy="606.6" r="3" fill="#F28E2B" />
+<circle cx="216.7" cy="559.8" r="3" fill="#F28E2B" />
+<circle cx="383.3" cy="473.9" r="3" fill="#F28E2B" />
+<circle cx="550.0" cy="470.0" r="3" fill="#F28E2B" />
+<polyline fill="none" stroke="#F28E2B" stroke-width="2" points="50.0,606.6 216.7,559.8 383.3,473.9 550.0,470.0" />
+<line x1="430" y1="498" x2="444" y2="498" stroke="#F28E2B" stroke-width="2" />
+<text x="450" y="502">random_direct</text>
+<circle cx="50.0" cy="552.0" r="3" fill="#59A14F" />
+<circle cx="216.7" cy="552.0" r="3" fill="#59A14F" />
+<circle cx="383.3" cy="552.0" r="3" fill="#59A14F" />
+<circle cx="550.0" cy="552.0" r="3" fill="#59A14F" />
+<polyline fill="none" stroke="#59A14F" stroke-width="2" points="50.0,552.0 216.7,552.0 383.3,552.0 550.0,552.0" />
+<line x1="430" y1="516" x2="444" y2="516" stroke="#59A14F" stroke-width="2" />
+<text x="450" y="520">stagewise_direct</text>
+<rect x="640" y="470" width="500" height="320" fill="white" stroke="#333" />
+<line x1="640" y1="534.0" x2="1140" y2="534.0" stroke="#e5e5e5" />
+<line x1="640" y1="598.0" x2="1140" y2="598.0" stroke="#e5e5e5" />
+<line x1="640" y1="662.0" x2="1140" y2="662.0" stroke="#e5e5e5" />
+<line x1="640" y1="726.0" x2="1140" y2="726.0" stroke="#e5e5e5" />
+<text class="subtitle" x="890.0" y="462" text-anchor="middle">RCA family</text>
+<text x="890.0" y="818" text-anchor="middle">Communication qubits per QPU</text>
+<text x="598" y="630.0" transform="rotate(-90 598,630.0)" text-anchor="middle">Objective</text>
+<circle cx="640.0" cy="790.0" r="3" fill="#4E79A7" />
+<circle cx="806.7" cy="790.0" r="3" fill="#4E79A7" />
+<circle cx="973.3" cy="790.0" r="3" fill="#4E79A7" />
+<circle cx="1140.0" cy="790.0" r="3" fill="#4E79A7" />
+<polyline fill="none" stroke="#4E79A7" stroke-width="2" points="640.0,790.0 806.7,790.0 973.3,790.0 1140.0,790.0" />
+<line x1="1020" y1="480" x2="1034" y2="480" stroke="#4E79A7" stroke-width="2" />
+<text x="1040" y="484">full_method</text>
+<circle cx="640.0" cy="565.3" r="3" fill="#F28E2B" />
+<circle cx="806.7" cy="572.1" r="3" fill="#F28E2B" />
+<circle cx="973.3" cy="476.8" r="3" fill="#F28E2B" />
+<circle cx="1140.0" cy="470.0" r="3" fill="#F28E2B" />
+<polyline fill="none" stroke="#F28E2B" stroke-width="2" points="640.0,565.3 806.7,572.1 973.3,476.8 1140.0,470.0" />
+<line x1="1020" y1="498" x2="1034" y2="498" stroke="#F28E2B" stroke-width="2" />
+<text x="1040" y="502">random_direct</text>
+<circle cx="640.0" cy="565.3" r="3" fill="#59A14F" />
+<circle cx="806.7" cy="565.3" r="3" fill="#59A14F" />
+<circle cx="973.3" cy="565.3" r="3" fill="#59A14F" />
+<circle cx="1140.0" cy="565.3" r="3" fill="#59A14F" />
+<polyline fill="none" stroke="#59A14F" stroke-width="2" points="640.0,565.3 806.7,565.3 973.3,565.3 1140.0,565.3" />
+<line x1="1020" y1="516" x2="1034" y2="516" stroke="#59A14F" stroke-width="2" />
+<text x="1040" y="520">stagewise_direct</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260">
+<style>text {font-family: Arial, Helvetica, sans-serif; font-size: 12px;} .title {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold;} .subtitle {font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;}</style>
+<text class="title" x="450.0" y="24" text-anchor="middle">Evaluation setup</text>
+<text class="subtitle" x="450.0" y="52" text-anchor="middle">Workload / architecture settings</text>
+<rect x="40.0" y="60.0" width="164.0" height="32.0" fill="#f3f3f3" stroke="#333" />
+<text x="122.0" y="80.0" text-anchor="middle">Scale</text>
+<rect x="204.0" y="60.0" width="164.0" height="32.0" fill="#f3f3f3" stroke="#333" />
+<text x="286.0" y="80.0" text-anchor="middle">Qubits</text>
+<rect x="368.0" y="60.0" width="164.0" height="32.0" fill="#f3f3f3" stroke="#333" />
+<text x="450.0" y="80.0" text-anchor="middle">Topology</text>
+<rect x="532.0" y="60.0" width="164.0" height="32.0" fill="#f3f3f3" stroke="#333" />
+<text x="614.0" y="80.0" text-anchor="middle">Comm/QPU</text>
+<rect x="696.0" y="60.0" width="164.0" height="32.0" fill="#f3f3f3" stroke="#333" />
+<text x="778.0" y="80.0" text-anchor="middle">Buffer/QPU</text>
+<rect x="40.0" y="92.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="122.0" y="112.0" text-anchor="middle">small</text>
+<rect x="204.0" y="92.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="286.0" y="112.0" text-anchor="middle">6</text>
+<rect x="368.0" y="92.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="450.0" y="112.0" text-anchor="middle">clos_small</text>
+<rect x="532.0" y="92.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="614.0" y="112.0" text-anchor="middle">2</text>
+<rect x="696.0" y="92.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="778.0" y="112.0" text-anchor="middle">3</text>
+<rect x="40.0" y="124.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="122.0" y="144.0" text-anchor="middle">medium</text>
+<rect x="204.0" y="124.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="286.0" y="144.0" text-anchor="middle">8</text>
+<rect x="368.0" y="124.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="450.0" y="144.0" text-anchor="middle">clos_small</text>
+<rect x="532.0" y="124.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="614.0" y="144.0" text-anchor="middle">2</text>
+<rect x="696.0" y="124.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="778.0" y="144.0" text-anchor="middle">3</text>
+<rect x="40.0" y="156.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="122.0" y="176.0" text-anchor="middle">large</text>
+<rect x="204.0" y="156.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="286.0" y="176.0" text-anchor="middle">10</text>
+<rect x="368.0" y="156.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="450.0" y="176.0" text-anchor="middle">clos_small</text>
+<rect x="532.0" y="156.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="614.0" y="176.0" text-anchor="middle">2</text>
+<rect x="696.0" y="156.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="778.0" y="176.0" text-anchor="middle">3</text>
+<rect x="40.0" y="188.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="122.0" y="208.0" text-anchor="middle">very_large</text>
+<rect x="204.0" y="188.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="286.0" y="208.0" text-anchor="middle">12</text>
+<rect x="368.0" y="188.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="450.0" y="208.0" text-anchor="middle">clos_medium</text>
+<rect x="532.0" y="188.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="614.0" y="208.0" text-anchor="middle">2</text>
+<rect x="696.0" y="188.0" width="164.0" height="32.0" fill="white" stroke="#333" />
+<text x="778.0" y="208.0" text-anchor="middle">3</text>
+</svg>

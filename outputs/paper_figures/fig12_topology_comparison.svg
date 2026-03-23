@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420">
+<style>text {font-family: Arial, Helvetica, sans-serif; font-size: 12px;} .title {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold;} .subtitle {font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;}</style>
+<text class="title" x="600.0" y="24" text-anchor="middle">Fig. 12 style: Comparison across QDC topologies</text>
+<rect x="50" y="70" width="500" height="280" fill="white" stroke="#333" />
+<line x1="50" y1="126.0" x2="550" y2="126.0" stroke="#e5e5e5" />
+<line x1="50" y1="182.0" x2="550" y2="182.0" stroke="#e5e5e5" />
+<line x1="50" y1="238.0" x2="550" y2="238.0" stroke="#e5e5e5" />
+<line x1="50" y1="294.0" x2="550" y2="294.0" stroke="#e5e5e5" />
+<text class="subtitle" x="300.0" y="62" text-anchor="middle">Objective value across topologies</text>
+<text x="300.0" y="378" text-anchor="middle">Topology index</text>
+<text x="8" y="210.0" transform="rotate(-90 8,210.0)" text-anchor="middle">Objective</text>
+<circle cx="50.0" cy="350.0" r="3" fill="#4E79A7" />
+<circle cx="216.7" cy="350.0" r="3" fill="#4E79A7" />
+<circle cx="383.3" cy="350.0" r="3" fill="#4E79A7" />
+<circle cx="550.0" cy="70.0" r="3" fill="#4E79A7" />
+<polyline fill="none" stroke="#4E79A7" stroke-width="2" points="50.0,350.0 216.7,350.0 383.3,350.0 550.0,70.0" />
+<line x1="430" y1="80" x2="444" y2="80" stroke="#4E79A7" stroke-width="2" />
+<text x="450" y="84">objective</text>
+<rect x="640" y="70" width="500" height="280" fill="white" stroke="#333" />
+<line x1="640" y1="126.0" x2="1140" y2="126.0" stroke="#e5e5e5" />
+<line x1="640" y1="182.0" x2="1140" y2="182.0" stroke="#e5e5e5" />
+<line x1="640" y1="238.0" x2="1140" y2="238.0" stroke="#e5e5e5" />
+<line x1="640" y1="294.0" x2="1140" y2="294.0" stroke="#e5e5e5" />
+<text class="subtitle" x="890.0" y="62" text-anchor="middle">Algorithm execution time across topologies</text>
+<text x="890.0" y="378" text-anchor="middle">Topology index</text>
+<text x="598" y="210.0" transform="rotate(-90 598,210.0)" text-anchor="middle">Compilation time (s)</text>
+<circle cx="640.0" cy="350.0" r="3" fill="#E15759" />
+<circle cx="806.7" cy="334.6" r="3" fill="#E15759" />
+<circle cx="973.3" cy="324.1" r="3" fill="#E15759" />
+<circle cx="1140.0" cy="70.0" r="3" fill="#E15759" />
+<polyline fill="none" stroke="#E15759" stroke-width="2" points="640.0,350.0 806.7,334.6 973.3,324.1 1140.0,70.0" />
+<line x1="1020" y1="80" x2="1034" y2="80" stroke="#E15759" stroke-width="2" />
+<text x="1040" y="84">runtime</text>
+<text x="50.0" y="368" text-anchor="middle">clos_small</text>
+<text x="640.0" y="368" text-anchor="middle">clos_small</text>
+<text x="216.7" y="368" text-anchor="middle">spine_leaf_small</text>
+<text x="806.7" y="368" text-anchor="middle">spine_leaf_small</text>
+<text x="383.3" y="368" text-anchor="middle">fat_tree_small</text>
+<text x="973.3" y="368" text-anchor="middle">fat_tree_small</text>
+<text x="550.0" y="368" text-anchor="middle">clos_medium</text>
+<text x="1140.0" y="368" text-anchor="middle">clos_medium</text>
+</svg>

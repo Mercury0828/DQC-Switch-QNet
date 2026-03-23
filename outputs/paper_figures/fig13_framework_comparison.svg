@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860">
+<style>text {font-family: Arial, Helvetica, sans-serif; font-size: 12px;} .title {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold;} .subtitle {font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;}</style>
+<text class="title" x="600.0" y="24" text-anchor="middle">Fig. 13 style: Framework-level comparison</text>
+<rect x="50" y="70" width="500" height="300" fill="white" stroke="#333" />
+<line x1="50" y1="130.0" x2="550" y2="130.0" stroke="#e5e5e5" />
+<line x1="50" y1="190.0" x2="550" y2="190.0" stroke="#e5e5e5" />
+<line x1="50" y1="250.0" x2="550" y2="250.0" stroke="#e5e5e5" />
+<line x1="50" y1="310.0" x2="550" y2="310.0" stroke="#e5e5e5" />
+<text class="subtitle" x="300.0" y="62" text-anchor="middle">(a) Objective comparison</text>
+<text x="300.0" y="398" text-anchor="middle">Baseline objective</text>
+<text x="8" y="220.0" transform="rotate(-90 8,220.0)" text-anchor="middle">Our objective</text>
+<circle cx="91.3" cy="267.7" r="3" fill="#4E79A7" />
+<circle cx="550.0" cy="70.0" r="3" fill="#4E79A7" />
+<circle cx="274.8" cy="165.5" r="3" fill="#4E79A7" />
+<circle cx="50.0" cy="370.0" r="3" fill="#4E79A7" />
+<polyline fill="none" stroke="#4E79A7" stroke-width="2" points="91.3,267.7 550.0,70.0 274.8,165.5 50.0,370.0" />
+<line x1="430" y1="80" x2="444" y2="80" stroke="#4E79A7" stroke-width="2" />
+<text x="450" y="84">pairs</text>
+<rect x="640" y="70" width="500" height="300" fill="white" stroke="#333" />
+<line x1="640" y1="130.0" x2="1140" y2="130.0" stroke="#e5e5e5" />
+<line x1="640" y1="190.0" x2="1140" y2="190.0" stroke="#e5e5e5" />
+<line x1="640" y1="250.0" x2="1140" y2="250.0" stroke="#e5e5e5" />
+<line x1="640" y1="310.0" x2="1140" y2="310.0" stroke="#e5e5e5" />
+<text class="subtitle" x="890.0" y="62" text-anchor="middle">(b) Performance improvement</text>
+<text x="890.0" y="398" text-anchor="middle">Benchmark index</text>
+<text x="598" y="220.0" transform="rotate(-90 598,220.0)" text-anchor="middle">Improvement (%)</text>
+<circle cx="640.0" cy="370.0" r="3" fill="#2E86DE" />
+<circle cx="806.7" cy="70.0" r="3" fill="#2E86DE" />
+<circle cx="973.3" cy="217.8" r="3" fill="#2E86DE" />
+<circle cx="1140.0" cy="124.7" r="3" fill="#2E86DE" />
+<polyline fill="none" stroke="#2E86DE" stroke-width="2" points="640.0,370.0 806.7,70.0 973.3,217.8 1140.0,124.7" />
+<line x1="1020" y1="80" x2="1034" y2="80" stroke="#2E86DE" stroke-width="2" />
+<text x="1040" y="84">improvement</text>
+<rect x="50" y="470" width="500" height="280" fill="white" stroke="#333" />
+<line x1="50" y1="526.0" x2="550" y2="526.0" stroke="#e5e5e5" />
+<line x1="50" y1="582.0" x2="550" y2="582.0" stroke="#e5e5e5" />
+<line x1="50" y1="638.0" x2="550" y2="638.0" stroke="#e5e5e5" />
+<line x1="50" y1="694.0" x2="550" y2="694.0" stroke="#e5e5e5" />
+<text class="subtitle" x="300.0" y="462" text-anchor="middle">(c) Circuit runtime</text>
+<text x="300.0" y="778" text-anchor="middle">Benchmark family</text>
+<text x="8" y="610.0" transform="rotate(-90 8,610.0)" text-anchor="middle">Runtime</text>
+<text x="112.5" y="764" text-anchor="middle">mct</text>
+<rect x="66.7" y="683.3" width="33.3" height="66.7" fill="#4E79A7" />
+<rect x="108.3" y="661.1" width="33.3" height="88.9" fill="#F28E2B" />
+<text x="237.5" y="764" text-anchor="middle">qft</text>
+<rect x="191.7" y="629.6" width="33.3" height="120.4" fill="#4E79A7" />
+<rect x="233.3" y="498.0" width="33.3" height="252.0" fill="#F28E2B" />
+<text x="362.5" y="764" text-anchor="middle">grover</text>
+<rect x="316.7" y="655.5" width="33.3" height="94.5" fill="#4E79A7" />
+<rect x="358.3" y="598.1" width="33.3" height="151.9" fill="#F28E2B" />
+<text x="487.5" y="764" text-anchor="middle">rca</text>
+<rect x="441.7" y="711.1" width="33.3" height="38.9" fill="#4E79A7" />
+<rect x="483.3" y="677.7" width="33.3" height="72.3" fill="#F28E2B" />
+<rect x="410" y="474" width="12" height="12" fill="#4E79A7" />
+<text x="428" y="484">full_framework</text>
+<rect x="410" y="492" width="12" height="12" fill="#F28E2B" />
+<text x="428" y="502">stagewise_direct</text>
+<rect x="640" y="470" width="500" height="280" fill="white" stroke="#333" />
+<line x1="640" y1="526.0" x2="1140" y2="526.0" stroke="#e5e5e5" />
+<line x1="640" y1="582.0" x2="1140" y2="582.0" stroke="#e5e5e5" />
+<line x1="640" y1="638.0" x2="1140" y2="638.0" stroke="#e5e5e5" />
+<line x1="640" y1="694.0" x2="1140" y2="694.0" stroke="#e5e5e5" />
+<text class="subtitle" x="890.0" y="462" text-anchor="middle">(d) Algorithm execution time</text>
+<text x="890.0" y="778" text-anchor="middle">Benchmark family</text>
+<text x="598" y="610.0" transform="rotate(-90 598,610.0)" text-anchor="middle">Compile time (s)</text>
+<text x="702.5" y="764" text-anchor="middle">mct</text>
+<rect x="656.7" y="611.9" width="33.3" height="138.1" fill="#4E79A7" />
+<rect x="698.3" y="749.8" width="33.3" height="0.2" fill="#F28E2B" />
+<text x="827.5" y="764" text-anchor="middle">qft</text>
+<rect x="781.7" y="498.0" width="33.3" height="252.0" fill="#4E79A7" />
+<rect x="823.3" y="749.8" width="33.3" height="0.2" fill="#F28E2B" />
+<text x="952.5" y="764" text-anchor="middle">grover</text>
+<rect x="906.7" y="586.7" width="33.3" height="163.3" fill="#4E79A7" />
+<rect x="948.3" y="749.8" width="33.3" height="0.2" fill="#F28E2B" />
+<text x="1077.5" y="764" text-anchor="middle">rca</text>
+<rect x="1031.7" y="690.5" width="33.3" height="59.5" fill="#4E79A7" />
+<rect x="1073.3" y="749.8" width="33.3" height="0.2" fill="#F28E2B" />
+<rect x="1000" y="474" width="12" height="12" fill="#4E79A7" />
+<text x="1018" y="484">full_framework</text>
+<rect x="1000" y="492" width="12" height="12" fill="#F28E2B" />
+<text x="1018" y="502">stagewise_direct</text>
+</svg>

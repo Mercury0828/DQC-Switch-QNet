@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320">
+<style>text { font-family: monospace; font-size: 12px; } .title { font-size: 18px; font-weight: bold; }</style>
+<text class="title" x="450.0" y="28" text-anchor="middle">Representative resource usage: greedy_unified</text>
+<line x1="70" y1="270" x2="870" y2="270" stroke="black" />
+<line x1="70" y1="50" x2="70" y2="270" stroke="black" />
+<polyline fill="none" stroke="#E15759" stroke-width="3" points="70.0,270.0 203.3,270.0 203.3,160.0 292.2,160.0 292.2,160.0 381.1,160.0 381.1,160.0 514.4,160.0 514.4,50.0 603.3,50.0 603.3,50.0 692.2,50.0 692.2,50.0 870.0,50.0 870.0,50.0" />
+<text x="450.0" y="310" text-anchor="middle">time</text>
+<text x="20" y="160.0" transform="rotate(-90 20,160.0)" text-anchor="middle">EPR / communication occupancy</text>
+<text x="60" y="274.0" text-anchor="end">0.0</text>
+<text x="60" y="219.0" text-anchor="end">1.0</text>
+<text x="60" y="164.0" text-anchor="end">2.0</text>
+<text x="60" y="109.0" text-anchor="end">3.0</text>
+<text x="60" y="54.0" text-anchor="end">4.0</text>
+</svg>
