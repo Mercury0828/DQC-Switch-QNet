@@ -1,0 +1,10 @@
+workload,placement,avg_runtime,avg_objective,avg_split_ratio
+dense_cross_rack,average_direct,129.0,161.0,0.0
+dense_cross_rack,greedy_unified,39.0,39.0,0.0
+dense_cross_rack,random_direct,126.667,148.667,0.0
+light_remote,average_direct,38.0,46.0,0.0
+light_remote,greedy_unified,18.333,18.333,0.0
+light_remote,random_direct,47.667,57.667,0.0
+mixed_random,average_direct,88.0,108.0,0.0
+mixed_random,greedy_unified,36.0,36.0,0.0
+mixed_random,random_direct,96.333,116.333,0.0
