@@ -6,7 +6,8 @@ from qdc_project.algorithms.placement_greedy import RackAwareGreedyPlacer
 from qdc_project.algorithms.scheduler_baseline import AveragePlacementStrategy, RandomPlacementStrategy
 from qdc_project.algorithms.scheduler_unified import UnifiedSchedulerConfig
 from qdc_project.circuit.loaders import load_handcrafted_representative
-from qdc_project.plotting.gantt import write_text_gantt
+from qdc_project.plotting.barplots import write_markdown_table
+from qdc_project.plotting.gantt import write_gantt_svg, write_text_gantt
 from qdc_project.simulation.engine import SimulationEngine
 from qdc_project.simulation.logger import SimulationLogger
 from qdc_project.topology.qdc_topology import QDCTopology, TopologyConfig
@@ -47,10 +48,17 @@ def main() -> None:
 
     for name, (placement, config, mode) in placements.items():
         state = engine.run_direct_only(dag, placement) if mode == "direct" else engine.run_unified(dag, placement, config)
-        rows.append(logger.to_row(name, state))
+        row = logger.to_row(name, state)
+        rows.append(row)
         write_text_gantt(output_dir / f"{name}_gantt.csv", state)
+        write_gantt_svg(output_dir / f"{name}_gantt.svg", state, title=f"Representative schedule: {name}")
 
     logger.write_csv(output_dir / "summary.csv", rows)
+    write_markdown_table(
+        output_dir / 'summary.md',
+        rows,
+        columns=['name', 'runtime', 'objective_value', 'cross_rack_epr', 'distilled_epr', 'split_ratio', 'peak_buffer'],
+    )
     print(f"Representative outputs written to {output_dir}")
 
 

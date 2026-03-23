@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="480">
+<style>text { font-family: monospace; font-size: 12px; } .title { font-size: 18px; font-weight: bold; }</style>
+<text class="title" x="430.0" y="30" text-anchor="middle">Sensitivity runtime heatmap</text>
+<text x="220.0" y="58" text-anchor="middle">1</text>
+<text x="460.0" y="58" text-anchor="middle">2</text>
+<text x="700.0" y="58" text-anchor="middle">3</text>
+<text x="90" y="113.8" text-anchor="end">1</text>
+<rect x="100.0" y="70.0" width="240.0" height="87.5" fill="#14b4dc" stroke="#ffffff" />
+<text x="220.0" y="117.8" text-anchor="middle">70.00</text>
+<rect x="340.0" y="70.0" width="240.0" height="87.5" fill="#14b4dc" stroke="#ffffff" />
+<text x="460.0" y="117.8" text-anchor="middle">70.00</text>
+<rect x="580.0" y="70.0" width="240.0" height="87.5" fill="#14b4dc" stroke="#ffffff" />
+<text x="700.0" y="117.8" text-anchor="middle">70.00</text>
+<text x="90" y="201.2" text-anchor="end">2</text>
+<rect x="100.0" y="157.5" width="240.0" height="87.5" fill="#dc3c50" stroke="#ffffff" />
+<text x="220.0" y="205.2" text-anchor="middle">72.00</text>
+<rect x="340.0" y="157.5" width="240.0" height="87.5" fill="#dc3c50" stroke="#ffffff" />
+<text x="460.0" y="205.2" text-anchor="middle">72.00</text>
+<rect x="580.0" y="157.5" width="240.0" height="87.5" fill="#dc3c50" stroke="#ffffff" />
+<text x="700.0" y="205.2" text-anchor="middle">72.00</text>
+<text x="90" y="288.8" text-anchor="end">3</text>
+<rect x="100.0" y="245.0" width="240.0" height="87.5" fill="#dc3c50" stroke="#ffffff" />
+<text x="220.0" y="292.8" text-anchor="middle">72.00</text>
+<rect x="340.0" y="245.0" width="240.0" height="87.5" fill="#dc3c50" stroke="#ffffff" />
+<text x="460.0" y="292.8" text-anchor="middle">72.00</text>
+<rect x="580.0" y="245.0" width="240.0" height="87.5" fill="#dc3c50" stroke="#ffffff" />
+<text x="700.0" y="292.8" text-anchor="middle">72.00</text>
+<text x="90" y="376.2" text-anchor="end">4</text>
+<rect x="100.0" y="332.5" width="240.0" height="87.5" fill="#dc3c50" stroke="#ffffff" />
+<text x="220.0" y="380.2" text-anchor="middle">72.00</text>
+<rect x="340.0" y="332.5" width="240.0" height="87.5" fill="#dc3c50" stroke="#ffffff" />
+<text x="460.0" y="380.2" text-anchor="middle">72.00</text>
+<rect x="580.0" y="332.5" width="240.0" height="87.5" fill="#dc3c50" stroke="#ffffff" />
+<text x="700.0" y="380.2" text-anchor="middle">72.00</text>
+</svg>

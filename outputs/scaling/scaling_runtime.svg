@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="480">
+<style>text { font-family: monospace; font-size: 12px; } .title { font-size: 18px; font-weight: bold; }</style>
+<text class="title" x="430.0" y="30" text-anchor="middle">Scaling runtime heatmap</text>
+<text x="190.0" y="58" text-anchor="middle">10</text>
+<text x="370.0" y="58" text-anchor="middle">12</text>
+<text x="550.0" y="58" text-anchor="middle">6</text>
+<text x="730.0" y="58" text-anchor="middle">8</text>
+<text x="90" y="113.8" text-anchor="end">18</text>
+<rect x="100.0" y="70.0" width="180.0" height="87.5" fill="#-41e7118" stroke="#ffffff" />
+<text x="190.0" y="117.8" text-anchor="middle">0.00</text>
+<rect x="280.0" y="70.0" width="180.0" height="87.5" fill="#-41e7118" stroke="#ffffff" />
+<text x="370.0" y="117.8" text-anchor="middle">0.00</text>
+<rect x="460.0" y="70.0" width="180.0" height="87.5" fill="#14b4dc" stroke="#ffffff" />
+<text x="550.0" y="117.8" text-anchor="middle">27.00</text>
+<rect x="640.0" y="70.0" width="180.0" height="87.5" fill="#-41e7118" stroke="#ffffff" />
+<text x="730.0" y="117.8" text-anchor="middle">0.00</text>
+<text x="90" y="201.2" text-anchor="end">24</text>
+<rect x="100.0" y="157.5" width="180.0" height="87.5" fill="#-41e7118" stroke="#ffffff" />
+<text x="190.0" y="205.2" text-anchor="middle">0.00</text>
+<rect x="280.0" y="157.5" width="180.0" height="87.5" fill="#-41e7118" stroke="#ffffff" />
+<text x="370.0" y="205.2" text-anchor="middle">0.00</text>
+<rect x="460.0" y="157.5" width="180.0" height="87.5" fill="#-41e7118" stroke="#ffffff" />
+<text x="550.0" y="205.2" text-anchor="middle">0.00</text>
+<rect x="640.0" y="157.5" width="180.0" height="87.5" fill="#33a0c5" stroke="#ffffff" />
+<text x="730.0" y="205.2" text-anchor="middle">37.00</text>
+<text x="90" y="288.8" text-anchor="end">30</text>
+<rect x="100.0" y="245.0" width="180.0" height="87.5" fill="#dc3c50" stroke="#ffffff" />
+<text x="190.0" y="292.8" text-anchor="middle">90.00</text>
+<rect x="280.0" y="245.0" width="180.0" height="87.5" fill="#-41e7118" stroke="#ffffff" />
+<text x="370.0" y="292.8" text-anchor="middle">0.00</text>
+<rect x="460.0" y="245.0" width="180.0" height="87.5" fill="#-41e7118" stroke="#ffffff" />
+<text x="550.0" y="292.8" text-anchor="middle">0.00</text>
+<rect x="640.0" y="245.0" width="180.0" height="87.5" fill="#-41e7118" stroke="#ffffff" />
+<text x="730.0" y="292.8" text-anchor="middle">0.00</text>
+<text x="90" y="376.2" text-anchor="end">36</text>
+<rect x="100.0" y="332.5" width="180.0" height="87.5" fill="#-41e7118" stroke="#ffffff" />
+<text x="190.0" y="380.2" text-anchor="middle">0.00</text>
+<rect x="280.0" y="332.5" width="180.0" height="87.5" fill="#7f7390" stroke="#ffffff" />
+<text x="370.0" y="380.2" text-anchor="middle">61.00</text>
+<rect x="460.0" y="332.5" width="180.0" height="87.5" fill="#-41e7118" stroke="#ffffff" />
+<text x="550.0" y="380.2" text-anchor="middle">0.00</text>
+<rect x="640.0" y="332.5" width="180.0" height="87.5" fill="#-41e7118" stroke="#ffffff" />
+<text x="730.0" y="380.2" text-anchor="middle">0.00</text>
+</svg>

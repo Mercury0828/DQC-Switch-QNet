@@ -1,6 +1,6 @@
 # DQC-Switch-QNet
 
-This repository now implements all phased layers requested by the `DQC_switch_qnet.pdf` design document:
+This repository implements the phased simulator stack requested by the `DQC_switch_qnet.pdf` design document:
 
 - Phase 1: simulator core with hierarchical QDC topology, switch reconfiguration state, EPR inventory/buffer accounting, and DAG execution.
 - Phase 2: minimal baselines with random placement, average placement, and direct-only scheduling.
@@ -18,7 +18,7 @@ This repository now implements all phased layers requested by the `DQC_switch_qn
 - `src/qdc_project/model/`: simulator state, metrics, and invariant checks.
 - `src/qdc_project/algorithms/`: baseline and unified placement/scheduling policies.
 - `src/qdc_project/simulation/`: execution engine, events, and CSV logger.
-- `src/qdc_project/plotting/`: schedule/barplot/heatmap CSV exports.
+- `src/qdc_project/plotting/`: CSV/SVG/Markdown export helpers for schedules, tables, bar charts, and heatmaps.
 - `src/qdc_project/experiments/`: runnable experiment entry points.
 - `tests/`: invariant-focused unit tests.
 
@@ -33,6 +33,18 @@ PYTHONPATH=src python -m qdc_project.experiments.run_sensitivity
 PYTHONPATH=src pytest
 ```
 
+## Output artifacts
+
+Each experiment now emits:
+
+- raw CSV summaries,
+- Markdown tables for quick inspection,
+- SVG figures for schedule views, runtime bar charts, and heatmaps.
+
+## Notes on runtime
+
+The simulator is event-driven and currently configured for small-to-medium benchmark sweeps so it still runs quickly on this machine. To make timing comparisons less trivial, the benchmark, scaling, and sensitivity scripts now use larger topologies/workloads and multiple seeds rather than one tiny instance.
+
 ## Notes on dependencies
 
-The implementation is written to remain runnable in restricted environments with only the Python standard library and `pytest` available. Qiskit loading remains an explicit hook in `loaders.py`; richer plotting or benchmark imports can be layered in when optional dependencies are installed.
+The implementation remains runnable with only the Python standard library and `pytest`. Qiskit loading is still exposed as a hook in `loaders.py`; richer third-party plotting can be added later if desired.
