@@ -1,0 +1,14 @@
+seed: 7
+qdc:
+  racks: 2
+  qpus_per_rack: 2
+  data_qubits_per_qpu: 4
+  comm_qubits_per_qpu: 1
+  buffer_qubits_per_qpu: 2
+  intra_epr_latency: 2
+  cross_epr_latency: 7
+  switch_reconfig_latency: 3
+  gate_durations:
+    local_cx: 1
+    remote_cx: 1
+    single_qubit: 1
