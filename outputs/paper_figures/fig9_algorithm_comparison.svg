@@ -40,21 +40,21 @@
 <text x="890.0" y="378" text-anchor="middle">Problem scale</text>
 <text x="598" y="210.0" transform="rotate(-90 598,210.0)" text-anchor="middle">Compilation time (s)</text>
 <text x="702.5" y="364" text-anchor="middle">small</text>
-<rect x="652.5" y="202.9" width="25.0" height="147.1" fill="#4E79A7" />
-<rect x="683.8" y="349.8" width="25.0" height="0.2" fill="#F28E2B" />
-<rect x="715.0" y="349.8" width="25.0" height="0.2" fill="#59A14F" />
+<rect x="652.5" y="205.8" width="25.0" height="144.2" fill="#4E79A7" />
+<rect x="683.8" y="349.7" width="25.0" height="0.3" fill="#F28E2B" />
+<rect x="715.0" y="349.7" width="25.0" height="0.3" fill="#59A14F" />
 <text x="827.5" y="364" text-anchor="middle">medium</text>
-<rect x="777.5" y="145.0" width="25.0" height="205.0" fill="#4E79A7" />
-<rect x="808.8" y="349.8" width="25.0" height="0.2" fill="#F28E2B" />
-<rect x="840.0" y="349.8" width="25.0" height="0.2" fill="#59A14F" />
+<rect x="777.5" y="160.4" width="25.0" height="189.6" fill="#4E79A7" />
+<rect x="808.8" y="349.7" width="25.0" height="0.3" fill="#F28E2B" />
+<rect x="840.0" y="349.7" width="25.0" height="0.3" fill="#59A14F" />
 <text x="952.5" y="364" text-anchor="middle">large</text>
-<rect x="902.5" y="228.3" width="25.0" height="121.7" fill="#4E79A7" />
-<rect x="933.8" y="349.8" width="25.0" height="0.2" fill="#F28E2B" />
-<rect x="965.0" y="349.8" width="25.0" height="0.2" fill="#59A14F" />
+<rect x="902.5" y="157.8" width="25.0" height="192.2" fill="#4E79A7" />
+<rect x="933.8" y="349.7" width="25.0" height="0.3" fill="#F28E2B" />
+<rect x="965.0" y="349.7" width="25.0" height="0.3" fill="#59A14F" />
 <text x="1077.5" y="364" text-anchor="middle">very_large</text>
 <rect x="1027.5" y="98.0" width="25.0" height="252.0" fill="#4E79A7" />
-<rect x="1058.8" y="349.8" width="25.0" height="0.2" fill="#F28E2B" />
-<rect x="1090.0" y="349.8" width="25.0" height="0.2" fill="#59A14F" />
+<rect x="1058.8" y="349.7" width="25.0" height="0.3" fill="#F28E2B" />
+<rect x="1090.0" y="349.7" width="25.0" height="0.3" fill="#59A14F" />
 <rect x="1000" y="74" width="12" height="12" fill="#4E79A7" />
 <text x="1018" y="84">full_method</text>
 <rect x="1000" y="92" width="12" height="12" fill="#F28E2B" />

@@ -1,13 +1,13 @@
 name,runtime,objective_value,solver_time_seconds,intra_rack_epr,cross_rack_epr,distilled_epr,split_consumed,batched_epr,collective_batches,avg_epr_wait,peak_buffer,avg_buffer,wait_time,switch_reconfiguration,retry_overhead_hook,split_ratio,latency_local_gate,latency_intra_rack_epr,latency_cross_rack_epr,latency_switch_reconfiguration,latency_wait_time,latency_retry_overhead_hook,latency_distillation,scale,method
 small:random_direct,80,92.0,0.0,0,9,0,0,0,0,0.0,2,1.0,71.0,12,0.0,0.0,18.0,0.0,54.0,12,71.0,0.0,0.0,small,random_direct
 small:stagewise_direct,57,69.0,0.0,1,10,0,0,0,0,0.0,2,1.0,0.0,12,0.0,0.0,18.0,2.0,60.0,12,0.0,0.0,0.0,small,stagewise_direct
-small:full_method,31,31.0,0.00046359099997062003,8,0,0,0,5,2,3.625,6,3.25,28.0,0,0.0,0.0,18.0,16.0,0.0,0,28.0,0.0,0.0,small,full_method
+small:full_method,31,31.0,0.0004475149999052519,8,0,0,0,5,2,3.625,6,3.25,28.0,0,0.0,0.0,18.0,16.0,0.0,0,28.0,0.0,0.0,small,full_method
 medium:random_direct,105,111.0,0.0,7,12,0,0,0,0,0.0,2,1.0,90.0,6,0.0,0.0,24.0,14.0,72.0,6,90.0,0.0,0.0,medium,random_direct
 medium:stagewise_direct,101,117.0,0.0,7,12,0,0,0,0,0.0,2,1.0,65.0,16,0.0,0.0,24.0,14.0,72.0,16,65.0,0.0,0.0,medium,stagewise_direct
-medium:full_method,52,52.0,0.028104005999921355,14,0,0,0,7,3,5.3076923076923075,6,4.0,57.0,0,0.0,0.0,24.0,28.0,0.0,0,57.0,0.0,0.0,medium,full_method
+medium:full_method,52,52.0,0.0007675699998799246,14,0,0,0,7,3,5.3076923076923075,6,4.0,57.0,0,0.0,0.0,24.0,28.0,0.0,0,57.0,0.0,0.0,medium,full_method
 large:random_direct,115,129.0,0.0,1,14,0,0,0,0,0.0,2,1.0,152.0,14,0.0,0.0,30.0,2.0,84.0,14,152.0,0.0,0.0,large,random_direct
 large:stagewise_direct,118,136.0,0.0,3,16,0,0,0,0,0.0,2,1.0,106.0,18,0.0,0.0,30.0,6.0,96.0,18,106.0,0.0,0.0,large,stagewise_direct
-large:full_method,50,50.0,0.0012028959999952349,13,0,0,0,6,3,4.833333333333333,6,3.76,93.0,0,0.0,0.0,30.0,26.0,0.0,0,93.0,0.0,0.0,large,full_method
+large:full_method,50,50.0,0.0006848889997854712,13,0,0,0,6,3,4.833333333333333,6,3.76,93.0,0,0.0,0.0,30.0,26.0,0.0,0,93.0,0.0,0.0,large,full_method
 very_large:random_direct,136,150.0,0.0,4,18,0,0,0,0,0.0,2,1.0,165.0,14,0.0,0.0,36.0,8.0,108.0,14,165.0,0.0,0.0,very_large,random_direct
 very_large:stagewise_direct,132,160.0,0.0,5,17,0,0,0,0,0.0,2,1.0,104.0,28,0.0,0.0,36.0,10.0,102.0,28,104.0,0.0,0.0,very_large,stagewise_direct
-very_large:full_method,64,64.0,0.001594981999915035,15,0,0,0,6,3,5.571428571428571,6,3.6551724137931036,132.0,0,0.0,0.0,36.0,30.0,0.0,0,132.0,0.0,0.0,very_large,full_method
+very_large:full_method,64,64.0,0.000782276999871101,15,0,0,0,6,3,5.571428571428571,6,3.6551724137931036,132.0,0,0.0,0.0,36.0,30.0,0.0,0,132.0,0.0,0.0,very_large,full_method

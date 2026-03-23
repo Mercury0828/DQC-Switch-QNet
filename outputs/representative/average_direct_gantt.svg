@@ -1,1 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="120"></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560">
+<style>text { font-family: Arial, Helvetica, sans-serif; font-size: 12px; } .title { font-size: 18px; } .label { font-size: 14px; }</style>
+<text class="title" x="380.0" y="35" text-anchor="middle">Representative schedule: average_direct</text>
+<rect x="90" y="70" width="560" height="390" fill="white" stroke="#333" />
+<line x1="90.0" y1="70" x2="90.0" y2="460" stroke="#e6e6e6" />
+<line x1="183.3" y1="70" x2="183.3" y2="460" stroke="#e6e6e6" />
+<line x1="276.7" y1="70" x2="276.7" y2="460" stroke="#e6e6e6" />
+<line x1="370.0" y1="70" x2="370.0" y2="460" stroke="#e6e6e6" />
+<line x1="463.3" y1="70" x2="463.3" y2="460" stroke="#e6e6e6" />
+<line x1="556.7" y1="70" x2="556.7" y2="460" stroke="#e6e6e6" />
+<line x1="90" y1="70.0" x2="650" y2="70.0" stroke="#eeeeee" />
+<line x1="90" y1="148.0" x2="650" y2="148.0" stroke="#eeeeee" />
+<line x1="90" y1="226.0" x2="650" y2="226.0" stroke="#eeeeee" />
+<line x1="90" y1="304.0" x2="650" y2="304.0" stroke="#eeeeee" />
+<line x1="90" y1="382.0" x2="650" y2="382.0" stroke="#eeeeee" />
+<line x1="90" y1="460.0" x2="650" y2="460.0" stroke="#eeeeee" />
+<rect x="125.0" y="396.7" width="70.0" height="8" fill="#4b4be8" stroke="#555" stroke-width="0.5" />
+<rect x="265.0" y="333.3" width="70.0" height="8" fill="#4b4be8" stroke="#555" stroke-width="0.5" />
+<rect x="405.0" y="270.0" width="70.0" height="8" fill="#4b4be8" stroke="#555" stroke-width="0.5" />
+<rect x="405.0" y="206.7" width="70.0" height="8" fill="#4b4be8" stroke="#555" stroke-width="0.5" />
+<rect x="475.0" y="143.3" width="70.0" height="8" fill="#4b4be8" stroke="#555" stroke-width="0.5" />
+<rect x="545.0" y="80.0" width="70.0" height="8" fill="#4b4be8" stroke="#555" stroke-width="0.5" />
+<text x="125.0" y="486" text-anchor="middle" class="label">1</text>
+<text x="195.0" y="486" text-anchor="middle" class="label">2</text>
+<text x="265.0" y="486" text-anchor="middle" class="label">3</text>
+<text x="335.0" y="486" text-anchor="middle" class="label">4</text>
+<text x="405.0" y="486" text-anchor="middle" class="label">5</text>
+<text x="475.0" y="486" text-anchor="middle" class="label">6</text>
+<text x="545.0" y="486" text-anchor="middle" class="label">7</text>
+<text x="615.0" y="486" text-anchor="middle" class="label">8</text>
+<text x="75" y="464.0" text-anchor="end" class="label">0</text>
+<text x="75" y="400.7" text-anchor="end" class="label">1</text>
+<text x="75" y="337.3" text-anchor="end" class="label">2</text>
+<text x="75" y="274.0" text-anchor="end" class="label">3</text>
+<text x="75" y="210.7" text-anchor="end" class="label">4</text>
+<text x="75" y="147.3" text-anchor="end" class="label">5</text>
+<text x="75" y="84.0" text-anchor="end" class="label">6</text>
+<text x="380.0" y="515" text-anchor="middle" class="label">Time Slot</text>
+<text x="28" y="265.0" transform="rotate(-90 28,265.0)" text-anchor="middle" class="label">Gate Index</text>
+<rect x="435" y="290" width="170" height="84" rx="6" fill="#f7ecd2" stroke="#8a7d63" />
+<text x="449" y="314" class="label">Total Gates: 6</text>
+<text x="449" y="336" class="label">Cross-QPU: 0</text>
+<text x="449" y="358" class="label">Same-QPU: 6</text>
+<rect x="450" y="390" width="190" height="56" rx="5" fill="white" stroke="#d0d0d0" />
+<rect x="462" y="402" width="36" height="12" fill="#ff4d4d" />
+<text x="508" y="412" class="label">Cross-QPU Gates</text>
+<rect x="462" y="422" width="36" height="12" fill="#4b4be8" />
+<text x="508" y="432" class="label">Same-QPU Gates</text>
+</svg>

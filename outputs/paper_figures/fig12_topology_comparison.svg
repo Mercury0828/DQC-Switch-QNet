@@ -25,10 +25,10 @@
 <text x="890.0" y="378" text-anchor="middle">Topology index</text>
 <text x="598" y="210.0" transform="rotate(-90 598,210.0)" text-anchor="middle">Compilation time (s)</text>
 <circle cx="640.0" cy="350.0" r="3" fill="#E15759" />
-<circle cx="806.7" cy="334.6" r="3" fill="#E15759" />
-<circle cx="973.3" cy="324.1" r="3" fill="#E15759" />
+<circle cx="806.7" cy="294.1" r="3" fill="#E15759" />
+<circle cx="973.3" cy="194.7" r="3" fill="#E15759" />
 <circle cx="1140.0" cy="70.0" r="3" fill="#E15759" />
-<polyline fill="none" stroke="#E15759" stroke-width="2" points="640.0,350.0 806.7,334.6 973.3,324.1 1140.0,70.0" />
+<polyline fill="none" stroke="#E15759" stroke-width="2" points="640.0,350.0 806.7,294.1 973.3,194.7 1140.0,70.0" />
 <line x1="1020" y1="80" x2="1034" y2="80" stroke="#E15759" stroke-width="2" />
 <text x="1040" y="84">runtime</text>
 <text x="50.0" y="368" text-anchor="middle">clos_small</text>

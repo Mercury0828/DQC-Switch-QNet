@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Iterable, List, Mapping, Sequence, Tuple
 
 from qdc_project.model.state import SimulationState
+from qdc_project.plotting.gantt import _gate_rows
 from qdc_project.plotting.resource_usage import _build_step_series
 from qdc_project.topology.library import TopologyProfile
 
@@ -100,21 +101,65 @@ def _table(parts: List[str], rect: Tuple[float, float, float, float], columns: S
 
 
 def create_representative_figure(path: Path, state: SimulationState) -> None:
-    width, height = 1200, 420
-    parts = _header(width, height, 'Fig. 8 style: Representative switch-networked QDC example')
-    left = (50, 60, 520, 300)
-    right = (640, 60, 500, 300)
-    _axes(parts, *left, 'Time', 'Event index', 'Scheduling / communication timeline')
-    events = sorted(state.event_log, key=lambda e: (e.start_time, e.event_type, e.detail))
-    max_t = max((e.end_time for e in events), default=1)
-    colors = {'gate': '#e74c3c', 'cross_rack_generation': '#ff7f50', 'intra_rack_generation': '#2e86de', 'distillation': '#8e44ad', 'split_completion': '#f39c12', 'consume_epr': '#16a085'}
-    for idx, event in enumerate(events[:18]):
-        ex = left[0] + (event.start_time / max_t) * left[2]
-        ew = max(4, ((event.end_time - event.start_time) / max_t) * left[2])
-        ey = left[1] + left[3] - (idx + 1) * (left[3] / 20)
-        parts.append(f'<rect x="{ex:.1f}" y="{ey:.1f}" width="{ew:.1f}" height="10" fill="{colors.get(event.event_type, "#999")}" />')
+    width, height = 1400, 760
+    parts = _header(width, height, 'Fig. 8: Performance of representative example.')
+    left = (70, 70, 540, 420)
+    right = (710, 70, 560, 420)
+    # Left panel styled like the provided representative Gantt example.
+    _axes(parts, *left, 'Time Slot', 'Gate Index', 'Complete Gate Scheduling Gantt Chart')
+    gates = _gate_rows(state)
+    total_gates = len(gates)
+    max_slot = max((end for _, _, end, _ in gates), default=5)
+    for idx, (_, start, end, color) in enumerate(gates):
+        y = left[1] + left[3] - ((idx + 1) / max(total_gates, 1)) * (left[3] - 10)
+        x = left[0] + ((start - 0.5) / max(max_slot, 1)) * left[2]
+        w = max(8, ((end - start) / max(max_slot, 1)) * left[2])
+        parts.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="8" fill="{color}" stroke="#555" stroke-width="0.5" />')
+    same_count = sum(1 for _, _, _, c in gates if c == '#4b4be8')
+    cross_count = sum(1 for _, _, _, c in gates if c == '#ff4d4d')
+    box_x, box_y = left[0] + left[2] - 220, left[1] + left[3] - 180
+    parts.append(f'<rect x="{box_x}" y="{box_y}" width="170" height="90" rx="6" fill="#f7ecd2" stroke="#8a7d63" />')
+    parts.append(f'<text x="{box_x+12}" y="{box_y+24}">Total Gates: {total_gates}</text>')
+    parts.append(f'<text x="{box_x+12}" y="{box_y+48}">Cross-QPU: {cross_count}</text>')
+    parts.append(f'<text x="{box_x+12}" y="{box_y+72}">Same-QPU: {same_count}</text>')
+    legend_x, legend_y = left[0] + left[2] - 210, left[1] + left[3] - 65
+    parts.append(f'<rect x="{legend_x}" y="{legend_y}" width="200" height="58" rx="5" fill="white" stroke="#d0d0d0" />')
+    parts.append(f'<rect x="{legend_x+12}" y="{legend_y+12}" width="42" height="12" fill="#ff4d4d" />')
+    parts.append(f'<text x="{legend_x+66}" y="{legend_y+22}">Cross-QPU Gates</text>')
+    parts.append(f'<rect x="{legend_x+12}" y="{legend_y+34}" width="42" height="12" fill="#4b4be8" />')
+    parts.append(f'<text x="{legend_x+66}" y="{legend_y+44}">Same-QPU Gates</text>')
+
+    # Right panel styled like the provided utilization example.
+    _axes(parts, *right, 'Time Slot', 'EPR Utilization Ratio (%)', 'Communication Qubits Utilization Over Time')
     series = _build_step_series(state)
-    _line_chart(parts, right, [('EPR occupancy', series, '#2e86de')], 'Time', 'Occupancy', 'Communication / EPR usage over time')
+    capacity = sum(qpu.buffer_qubits for qpu in state.topology.qpus.values())
+    peak = max((v for _, v in series), default=0)
+    avg = sum(v for _, v in series) / max(1, len(series))
+    max_slot = max((t for t, _ in series), default=5)
+    fill_points = [f'{right[0]},{right[1]+right[3]}']
+    line_points = []
+    for t, v in series:
+        x = right[0] + ((t - 1) / max(max_slot - 1, 1)) * right[2]
+        pct = (v / max(capacity, 1)) * 100.0
+        y = right[1] + right[3] - (pct / 100.0) * right[3]
+        fill_points.append(f'{x:.1f},{y:.1f}')
+        line_points.append(f'{x:.1f},{y:.1f}')
+    fill_points.append(f'{right[0]+right[2]},{right[1]+right[3]}')
+    parts.append(f'<polygon points="{" ".join(fill_points)}" fill="#9bbad0" opacity="0.85" />')
+    parts.append(f'<polyline points="{" ".join(line_points)}" fill="none" stroke="#0a27ff" stroke-width="2.5" />')
+    avg_pct = (avg / max(capacity, 1)) * 100.0
+    avg_y = right[1] + right[3] - (avg_pct / 100.0) * right[3]
+    parts.append(f'<line x1="{right[0]}" y1="{avg_y:.1f}" x2="{right[0]+right[2]}" y2="{avg_y:.1f}" stroke="#ff6666" stroke-width="1.5" stroke-dasharray="6,4" />')
+    parts.append(f'<line x1="{right[0]}" y1="{right[1]}" x2="{right[0]+right[2]}" y2="{right[1]}" stroke="#f4c061" stroke-width="1.2" stroke-dasharray="3,4" />')
+    parts.append(f'<text x="{right[0]+right[2]-160}" y="{right[1]+24}">Avg: {avg_pct:.1f}%</text>')
+    parts.append(f'<text x="{right[0]+right[2]-160}" y="{right[1]+46}">Max: 100.0%</text>')
+    stat_x, stat_y = right[0] + right[2] - 250, right[1] + 120
+    parts.append(f'<rect x="{stat_x}" y="{stat_y}" width="210" height="100" rx="6" fill="#f7ecd2" stroke="#8a7d63" />')
+    parts.append(f'<text x="{stat_x+12}" y="{stat_y+28}">Total EPR Capacity: {capacity}</text>')
+    parts.append(f'<text x="{stat_x+12}" y="{stat_y+54}">Peak Occupied: {peak}</text>')
+    parts.append(f'<text x="{stat_x+12}" y="{stat_y+80}">Avg Occupied: {avg:.1f}</text>')
+
+    parts.append(f'<text x="{width/2}" y="{height-40}" text-anchor="middle" style="font-family: Times New Roman, serif; font-size: 36px;">Fig. 8: Performance of representative example.</text>')
     _footer(parts, path)
 
 
