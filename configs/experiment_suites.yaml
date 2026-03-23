@@ -1,0 +1,6 @@
+representative:
+  workload: representative_small
+comparison:
+  workloads:
+    - synthetic_dense_cross_rack
+    - synthetic_hotspot
