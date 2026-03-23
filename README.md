@@ -34,6 +34,25 @@ The experiment suite is organized in the same *evaluation progression* style req
 4. Scaling runtime heatmap (`outputs/scaling/scaling_runtime.svg`)
 5. Topology visualization panels (`outputs/topology_comparison/*.svg`)
 
+
+## Paper-style composite figures
+
+The project now also generates figure-level composite SVG outputs analogous in organization to the reference snapshots:
+
+- `outputs/paper_figures/evaluation_setup.svg`
+- `outputs/paper_figures/fig8_representative_example.svg`
+- `outputs/paper_figures/fig9_algorithm_comparison.svg`
+- `outputs/paper_figures/fig10_resource_sensitivity.svg`
+- `outputs/paper_figures/fig11_topology_gallery.svg`
+- `outputs/paper_figures/fig12_topology_comparison.svg`
+- `outputs/paper_figures/fig13_framework_comparison.svg`
+
+Run them with:
+
+```bash
+PYTHONPATH=src python -m qdc_project.experiments.run_paper_figures
+```
+
 ## Run
 
 ```bash
