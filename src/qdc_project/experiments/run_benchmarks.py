@@ -2,8 +2,11 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from qdc_project.algorithms.placement_greedy import RackAwareGreedyPlacer
 from qdc_project.algorithms.scheduler_baseline import AveragePlacementStrategy, RandomPlacementStrategy
+from qdc_project.algorithms.scheduler_unified import UnifiedSchedulerConfig
 from qdc_project.circuit.synthetic_generators import generate_synthetic_workload
+from qdc_project.plotting.barplots import write_barplot_data
 from qdc_project.simulation.engine import SimulationEngine
 from qdc_project.simulation.logger import SimulationLogger
 from qdc_project.topology.qdc_topology import QDCTopology, TopologyConfig
@@ -37,18 +40,25 @@ def main() -> None:
     rows = []
 
     for workload_name, dag in workloads.items():
-        placements = {
-            "random": RandomPlacementStrategy(seed=31).place(dag, topology),
-            "average": AveragePlacementStrategy().place(dag, topology),
-        }
-        for placement_name, placement in placements.items():
-            state = engine.run_direct_only(dag, placement)
-            row = logger.to_row(f"{workload_name}:{placement_name}", state)
+        runs = [
+            ("random_direct", RandomPlacementStrategy(seed=31).place(dag, topology), "direct", None),
+            ("average_direct", AveragePlacementStrategy().place(dag, topology), "direct", None),
+            (
+                "greedy_unified",
+                RackAwareGreedyPlacer().place(dag, topology),
+                "unified",
+                UnifiedSchedulerConfig(enable_collective=True, enable_split=True, enable_distillation=False),
+            ),
+        ]
+        for run_name, placement, mode, config in runs:
+            state = engine.run_direct_only(dag, placement) if mode == "direct" else engine.run_unified(dag, placement, config)
+            row = logger.to_row(f"{workload_name}:{run_name}", state)
             row["workload"] = workload_name
-            row["placement"] = placement_name
+            row["placement"] = run_name
             rows.append(row)
 
     logger.write_csv(output_dir / "benchmark_summary.csv", rows)
+    write_barplot_data(output_dir / "benchmark_runtime_table.csv", rows)
     print(f"Benchmark outputs written to {output_dir / 'benchmark_summary.csv'}")
 
 

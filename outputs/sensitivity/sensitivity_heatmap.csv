@@ -1,0 +1,7 @@
+name,runtime,objective_value,solver_time_seconds,intra_rack_epr,cross_rack_epr,distilled_epr,split_consumed,batched_epr,collective_batches,avg_epr_wait,peak_buffer,avg_buffer,wait_time,switch_reconfiguration,retry_overhead_hook,split_ratio,latency_local_gate,latency_intra_rack_epr,latency_cross_rack_epr,latency_switch_reconfiguration,latency_wait_time,latency_retry_overhead_hook,latency_distillation,buffer_qubits,comm_qubits
+buf_1_comm_1,24,24.0,0.0003506529999413033,6,0,0,0,0,0,0.0,2,1.0,37.0,0,0.0,0.0,12.0,12.0,0.0,0,37.0,0.0,0.0,1,1
+buf_1_comm_2,24,24.0,0.0002764060000117752,6,0,0,0,0,0,0.0,2,1.0,37.0,0,0.0,0.0,12.0,12.0,0.0,0,37.0,0.0,0.0,1,2
+buf_2_comm_1,26,26.0,0.00028860699990218563,7,0,0,0,2,1,3.5,4,2.923076923076923,41.0,0,0.0,0.0,12.0,14.0,0.0,0,41.0,0.0,0.0,2,1
+buf_2_comm_2,26,26.0,0.00028842999995504215,7,0,0,0,2,1,3.5,4,2.923076923076923,41.0,0,0.0,0.0,12.0,14.0,0.0,0,41.0,0.0,0.0,2,2
+buf_3_comm_1,28,28.0,0.0003047130001050391,8,0,0,0,6,3,4.666666666666667,6,3.857142857142857,47.0,0,0.0,0.0,12.0,16.0,0.0,0,47.0,0.0,0.0,3,1
+buf_3_comm_2,28,28.0,0.00034190800010946987,8,0,0,0,6,3,4.666666666666667,6,3.857142857142857,47.0,0,0.0,0.0,12.0,16.0,0.0,0,47.0,0.0,0.0,3,2

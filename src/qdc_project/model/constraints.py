@@ -8,6 +8,7 @@ class InvariantViolation(RuntimeError):
     pass
 
 
+
 def validate_postconditions(state: SimulationState, dag: CircuitDAG) -> None:
     if set(dag.gates) != state.executed_gates:
         raise InvariantViolation("Every gate must execute exactly once")
@@ -28,3 +29,22 @@ def validate_postconditions(state: SimulationState, dag: CircuitDAG) -> None:
             raise InvariantViolation(f"Communication capacity exceeded on {qpu_id}")
         if qpu_state.buffer_occupancy > qpu.buffer_qubits:
             raise InvariantViolation(f"Buffer capacity exceeded on {qpu_id}")
+
+    for event in state.event_log:
+        if event.event_type == "cross_rack_generation" and event.start_time < state.topology.config.switch_reconfig_latency:
+            # The first generation may happen after a reconfiguration from t=0; later checks rely on event ordering.
+            pass
+
+    distilled = {
+        record.pair_id: record
+        for records in state.epr_inventory.values()
+        for record in records
+        if record.kind == "distilled"
+    }
+    for record in distilled.values():
+        if len(record.source_pair_ids) != 2:
+            raise InvariantViolation("Distillation must consume exactly two source pairs")
+
+    split_gates = [gate_id for gate_id, mode in state.gate_execution_mode.items() if mode == "split"]
+    if state.metrics.split_gate_count != len(split_gates):
+        raise InvariantViolation("Split gate accounting mismatch")

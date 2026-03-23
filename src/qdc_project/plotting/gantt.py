@@ -8,9 +8,9 @@ from qdc_project.model.state import SimulationState
 
 def write_text_gantt(path: Path, state: SimulationState) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    lines = ["gate_id,start,end"]
-    for gate_id in sorted(state.gate_start_times):
-        lines.append(f"{gate_id},{state.gate_start_times[gate_id]},{state.gate_end_times[gate_id]}")
+    lines = ["kind,label,start,end"]
+    for event in sorted(state.event_log, key=lambda item: (item.start_time, item.event_type, item.detail)):
+        lines.append(f"{event.event_type},{event.detail},{event.start_time},{event.end_time}")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 

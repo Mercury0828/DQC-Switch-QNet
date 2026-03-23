@@ -2,7 +2,9 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from qdc_project.algorithms.placement_greedy import RackAwareGreedyPlacer
 from qdc_project.algorithms.scheduler_baseline import AveragePlacementStrategy, RandomPlacementStrategy
+from qdc_project.algorithms.scheduler_unified import UnifiedSchedulerConfig
 from qdc_project.circuit.loaders import load_handcrafted_representative
 from qdc_project.plotting.gantt import write_text_gantt
 from qdc_project.simulation.engine import SimulationEngine
@@ -32,14 +34,19 @@ def main() -> None:
     logger = SimulationLogger()
 
     placements = {
-        "random": RandomPlacementStrategy(seed=7).place(dag, topology),
-        "average": AveragePlacementStrategy().place(dag, topology),
+        "random_direct": (RandomPlacementStrategy(seed=7).place(dag, topology), None, "direct"),
+        "average_direct": (AveragePlacementStrategy().place(dag, topology), None, "direct"),
+        "greedy_unified": (
+            RackAwareGreedyPlacer().place(dag, topology),
+            UnifiedSchedulerConfig(enable_collective=True, enable_split=True, enable_distillation=True),
+            "unified",
+        ),
     }
     rows = []
     output_dir = Path("outputs/representative")
 
-    for name, placement in placements.items():
-        state = engine.run_direct_only(dag, placement)
+    for name, (placement, config, mode) in placements.items():
+        state = engine.run_direct_only(dag, placement) if mode == "direct" else engine.run_unified(dag, placement, config)
         rows.append(logger.to_row(name, state))
         write_text_gantt(output_dir / f"{name}_gantt.csv", state)
 

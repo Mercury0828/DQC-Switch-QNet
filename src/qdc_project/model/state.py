@@ -15,6 +15,17 @@ class EPRRecord:
     generated_at: int
     consumed_at: Optional[int] = None
     kind: str = "cross_rack"
+    fidelity: float = 1.0
+    batch_id: Optional[str] = None
+    source_pair_ids: Tuple[str, ...] = ()
+
+
+@dataclass
+class EventRecord:
+    event_type: str
+    start_time: int
+    end_time: int
+    detail: str
 
 
 @dataclass
@@ -34,8 +45,10 @@ class SimulationState:
     executed_gates: Set[str] = field(default_factory=set)
     gate_start_times: Dict[str, int] = field(default_factory=dict)
     gate_end_times: Dict[str, int] = field(default_factory=dict)
+    gate_execution_mode: Dict[str, str] = field(default_factory=dict)
     metrics: SimulationMetrics = field(default_factory=SimulationMetrics)
     buffer_occupancy_samples: List[int] = field(default_factory=list)
+    event_log: List[EventRecord] = field(default_factory=list)
 
     @classmethod
     def create(cls, topology: QDCTopology) -> "SimulationState":
@@ -44,6 +57,16 @@ class SimulationState:
             topology=topology,
             switch_state=SwitchState(topology.config.switch_reconfig_latency),
             qpu_state=qpu_state,
+        )
+
+    def log_event(self, event_type: str, start_time: int, end_time: int, detail: str) -> None:
+        self.event_log.append(
+            EventRecord(
+                event_type=event_type,
+                start_time=start_time,
+                end_time=end_time,
+                detail=detail,
+            )
         )
 
     def record_buffer_sample(self) -> None:

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from qdc_project.algorithms.scheduler_baseline import DirectOnlyScheduler, Placement
+from qdc_project.algorithms.scheduler_unified import UnifiedScheduler, UnifiedSchedulerConfig
 from qdc_project.circuit.dag_utils import CircuitDAG
 from qdc_project.model.constraints import validate_postconditions
 from qdc_project.model.state import SimulationState
@@ -14,6 +15,18 @@ class SimulationEngine:
     def run_direct_only(self, dag: CircuitDAG, placement: Placement) -> SimulationState:
         state = SimulationState.create(self.topology)
         scheduler = DirectOnlyScheduler()
+        state = scheduler.run(dag, placement, state)
+        validate_postconditions(state, dag)
+        return state
+
+    def run_unified(
+        self,
+        dag: CircuitDAG,
+        placement: Placement,
+        config: UnifiedSchedulerConfig | None = None,
+    ) -> SimulationState:
+        state = SimulationState.create(self.topology)
+        scheduler = UnifiedScheduler(config)
         state = scheduler.run(dag, placement, state)
         validate_postconditions(state, dag)
         return state
