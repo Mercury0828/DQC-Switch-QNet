@@ -1,0 +1,4 @@
+name,runtime,objective_value,solver_time_seconds,intra_rack_epr,cross_rack_epr,distilled_epr,split_consumed,batched_epr,collective_batches,avg_epr_wait,peak_buffer,avg_buffer,wait_time,switch_reconfiguration,retry_overhead_hook,split_ratio,latency_local_gate,latency_intra_rack_epr,latency_cross_rack_epr,latency_switch_reconfiguration,latency_wait_time,latency_retry_overhead_hook,latency_distillation
+random_direct,22,25.0,0.0,0,3,0,0,0,0,0.0,2,1.0,0.0,3,0.0,0.0,6.0,0.0,21.0,3,0.0,0.0,0.0
+average_direct,17,20.0,0.0,1,2,0,0,0,0,0.0,2,1.0,0.0,3,0.0,0.0,6.0,2.0,14.0,3,0.0,0.0,0.0
+greedy_unified,20,28.0,0.0002596200001789839,5,0,2,0,4,2,0.5714285714285714,6,4.2,8.0,0,4.0,0.0,6.0,10.0,0.0,0,8.0,4.0,4.0
