@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420">
+<style>text { font-family: monospace; font-size: 12px; } .title { font-size: 18px; font-weight: bold; }</style>
+<text class="title" x="450.0" y="30" text-anchor="middle">Benchmark average runtime by method</text>
+<line x1="90" y1="300" x2="870" y2="300" stroke="black" />
+<line x1="90" y1="60" x2="90" y2="300" stroke="black" />
+<rect x="100.0" y="73.9" width="240.0" height="226.1" fill="#4E79A7" />
+<text x="220.0" y="316" text-anchor="end" transform="rotate(-35 220.0,316)">average_direct</text>
+<text x="220.0" y="72.0" text-anchor="middle">85.00</text>
+<rect x="360.0" y="217.2" width="240.0" height="82.8" fill="#F28E2B" />
+<text x="480.0" y="316" text-anchor="end" transform="rotate(-35 480.0,316)">greedy_unified</text>
+<text x="480.0" y="211.2" text-anchor="middle">31.11</text>
+<rect x="620.0" y="60.0" width="240.0" height="240.0" fill="#E15759" />
+<text x="740.0" y="316" text-anchor="end" transform="rotate(-35 740.0,316)">random_direct</text>
+<text x="740.0" y="72.0" text-anchor="middle">90.22</text>
+<line x1="85" y1="300.0" x2="90" y2="300.0" stroke="black" />
+<text x="80" y="304.0" text-anchor="end">0.0</text>
+<line x1="85" y1="240.0" x2="90" y2="240.0" stroke="black" />
+<text x="80" y="244.0" text-anchor="end">22.6</text>
+<line x1="85" y1="180.0" x2="90" y2="180.0" stroke="black" />
+<text x="80" y="184.0" text-anchor="end">45.1</text>
+<line x1="85" y1="120.0" x2="90" y2="120.0" stroke="black" />
+<text x="80" y="124.0" text-anchor="end">67.7</text>
+<line x1="85" y1="60.0" x2="90" y2="60.0" stroke="black" />
+<text x="80" y="64.0" text-anchor="end">90.2</text>
+</svg>

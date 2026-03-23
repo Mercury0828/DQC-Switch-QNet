@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="520">
+<style>text { font-family: monospace; font-size: 13px; } .title { font-size: 18px; font-weight: bold; }</style>
+<text class="title" x="270.0" y="30" text-anchor="middle">Topology: fat_tree_small</text>
+<rect x="420" y="55" width="80" height="320" fill="#dddddd" stroke="#333" />
+<text x="460" y="75" text-anchor="middle">switch fabric</text>
+<rect x="30" y="70" width="400" height="55" fill="#f7f7f7" stroke="#555" rx="8" />
+<text x="50" y="90">rack_0</text>
+<rect x="110" y="80" width="90" height="28" fill="#4E79A7" opacity="0.85" />
+<text x="155" y="98" text-anchor="middle" fill="white">qpu_0</text>
+<line x1="200" y1="94" x2="420" y2="95" stroke="#999" />
+<rect x="230" y="80" width="90" height="28" fill="#4E79A7" opacity="0.85" />
+<text x="275" y="98" text-anchor="middle" fill="white">qpu_1</text>
+<line x1="320" y1="94" x2="420" y2="95" stroke="#999" />
+<rect x="30" y="160" width="400" height="55" fill="#f7f7f7" stroke="#555" rx="8" />
+<text x="50" y="180">rack_1</text>
+<rect x="110" y="170" width="90" height="28" fill="#4E79A7" opacity="0.85" />
+<text x="155" y="188" text-anchor="middle" fill="white">qpu_0</text>
+<line x1="200" y1="184" x2="420" y2="175" stroke="#999" />
+<rect x="230" y="170" width="90" height="28" fill="#4E79A7" opacity="0.85" />
+<text x="275" y="188" text-anchor="middle" fill="white">qpu_1</text>
+<line x1="320" y1="184" x2="420" y2="175" stroke="#999" />
+<rect x="30" y="250" width="400" height="55" fill="#f7f7f7" stroke="#555" rx="8" />
+<text x="50" y="270">rack_2</text>
+<rect x="110" y="260" width="90" height="28" fill="#4E79A7" opacity="0.85" />
+<text x="155" y="278" text-anchor="middle" fill="white">qpu_0</text>
+<line x1="200" y1="274" x2="420" y2="255" stroke="#999" />
+<rect x="230" y="260" width="90" height="28" fill="#4E79A7" opacity="0.85" />
+<text x="275" y="278" text-anchor="middle" fill="white">qpu_1</text>
+<line x1="320" y1="274" x2="420" y2="255" stroke="#999" />
+<rect x="30" y="340" width="400" height="55" fill="#f7f7f7" stroke="#555" rx="8" />
+<text x="50" y="360">rack_3</text>
+<rect x="110" y="350" width="90" height="28" fill="#4E79A7" opacity="0.85" />
+<text x="155" y="368" text-anchor="middle" fill="white">qpu_0</text>
+<line x1="200" y1="364" x2="420" y2="335" stroke="#999" />
+<rect x="230" y="350" width="90" height="28" fill="#4E79A7" opacity="0.85" />
+<text x="275" y="368" text-anchor="middle" fill="white">qpu_1</text>
+<line x1="320" y1="364" x2="420" y2="335" stroke="#999" />
+</svg>

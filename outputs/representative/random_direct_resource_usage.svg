@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320">
+<style>text { font-family: monospace; font-size: 12px; } .title { font-size: 18px; font-weight: bold; }</style>
+<text class="title" x="450.0" y="28" text-anchor="middle">Representative resource usage: random_direct</text>
+<line x1="70" y1="270" x2="870" y2="270" stroke="black" />
+<line x1="70" y1="50" x2="70" y2="270" stroke="black" />
+<polyline fill="none" stroke="#E15759" stroke-width="3" points="70.0,270.0" />
+<text x="450.0" y="310" text-anchor="middle">time</text>
+<text x="20" y="160.0" transform="rotate(-90 20,160.0)" text-anchor="middle">EPR / communication occupancy</text>
+<text x="60" y="274.0" text-anchor="end">0.0</text>
+<text x="60" y="219.0" text-anchor="end">0.2</text>
+<text x="60" y="164.0" text-anchor="end">0.5</text>
+<text x="60" y="109.0" text-anchor="end">0.8</text>
+<text x="60" y="54.0" text-anchor="end">1.0</text>
+</svg>
