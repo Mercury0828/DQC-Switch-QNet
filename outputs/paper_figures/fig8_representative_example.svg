@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760">
+<style>text {font-family: Arial, Helvetica, sans-serif; font-size: 12px;} .title {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold;} .subtitle {font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;}</style>
+<text class="title" x="700.0" y="24" text-anchor="middle">Fig. 8: Performance of representative example.</text>
+<rect x="70" y="70" width="540" height="420" fill="white" stroke="#333" />
+<line x1="70" y1="154.0" x2="610" y2="154.0" stroke="#e5e5e5" />
+<line x1="70" y1="238.0" x2="610" y2="238.0" stroke="#e5e5e5" />
+<line x1="70" y1="322.0" x2="610" y2="322.0" stroke="#e5e5e5" />
+<line x1="70" y1="406.0" x2="610" y2="406.0" stroke="#e5e5e5" />
+<text class="subtitle" x="340.0" y="62" text-anchor="middle">Complete Gate Scheduling Gantt Chart</text>
+<text x="340.0" y="518" text-anchor="middle">Time Slot</text>
+<text x="28" y="280.0" transform="rotate(-90 28,280.0)" text-anchor="middle">Gate Index</text>
+<rect x="97.0" y="421.7" width="54.0" height="8" fill="#4b4be8" stroke="#555" stroke-width="0.5" />
+<rect x="205.0" y="353.3" width="54.0" height="8" fill="#4b4be8" stroke="#555" stroke-width="0.5" />
+<rect x="313.0" y="285.0" width="54.0" height="8" fill="#4b4be8" stroke="#555" stroke-width="0.5" />
+<rect x="367.0" y="216.7" width="54.0" height="8" fill="#4b4be8" stroke="#555" stroke-width="0.5" />
+<rect x="475.0" y="148.3" width="54.0" height="8" fill="#4b4be8" stroke="#555" stroke-width="0.5" />
+<rect x="529.0" y="80.0" width="54.0" height="8" fill="#4b4be8" stroke="#555" stroke-width="0.5" />
+<rect x="390" y="310" width="170" height="90" rx="6" fill="#f7ecd2" stroke="#8a7d63" />
+<text x="402" y="334">Total Gates: 6</text>
+<text x="402" y="358">Cross-QPU: 0</text>
+<text x="402" y="382">Same-QPU: 6</text>
+<rect x="400" y="425" width="200" height="58" rx="5" fill="white" stroke="#d0d0d0" />
+<rect x="412" y="437" width="42" height="12" fill="#ff4d4d" />
+<text x="466" y="447">Cross-QPU Gates</text>
+<rect x="412" y="459" width="42" height="12" fill="#4b4be8" />
+<text x="466" y="469">Same-QPU Gates</text>
+<rect x="710" y="70" width="560" height="420" fill="white" stroke="#333" />
+<line x1="710" y1="154.0" x2="1270" y2="154.0" stroke="#e5e5e5" />
+<line x1="710" y1="238.0" x2="1270" y2="238.0" stroke="#e5e5e5" />
+<line x1="710" y1="322.0" x2="1270" y2="322.0" stroke="#e5e5e5" />
+<line x1="710" y1="406.0" x2="1270" y2="406.0" stroke="#e5e5e5" />
+<text class="subtitle" x="990.0" y="62" text-anchor="middle">Communication Qubits Utilization Over Time</text>
+<text x="990.0" y="518" text-anchor="middle">Time Slot</text>
+<text x="668" y="280.0" transform="rotate(-90 668,280.0)" text-anchor="middle">EPR Utilization Ratio (%)</text>
+<polygon points="710,490 710.0,490.0 710.0,490.0 710.0,385.0 790.0,385.0 790.0,385.0 870.0,385.0 870.0,385.0 950.0,385.0 950.0,280.0 1030.0,280.0 1030.0,280.0 1110.0,280.0 1110.0,280.0 1190.0,280.0 1190.0,280.0 1270.0,490.0 1270,490" fill="#9bbad0" opacity="0.85" />
+<polyline points="710.0,490.0 710.0,490.0 710.0,385.0 790.0,385.0 790.0,385.0 870.0,385.0 870.0,385.0 950.0,385.0 950.0,280.0 1030.0,280.0 1030.0,280.0 1110.0,280.0 1110.0,280.0 1190.0,280.0 1190.0,280.0 1270.0,490.0" fill="none" stroke="#0a27ff" stroke-width="2.5" />
+<line x1="710" y1="358.8" x2="1270" y2="358.8" stroke="#ff6666" stroke-width="1.5" stroke-dasharray="6,4" />
+<line x1="710" y1="70" x2="1270" y2="70" stroke="#f4c061" stroke-width="1.2" stroke-dasharray="3,4" />
+<text x="1110" y="94">Avg: 31.2%</text>
+<text x="1110" y="116">Max: 100.0%</text>
+<rect x="1020" y="190" width="210" height="100" rx="6" fill="#f7ecd2" stroke="#8a7d63" />
+<text x="1032" y="218">Total EPR Capacity: 8</text>
+<text x="1032" y="244">Peak Occupied: 4</text>
+<text x="1032" y="270">Avg Occupied: 2.5</text>
+<text x="700.0" y="720" text-anchor="middle" style="font-family: Times New Roman, serif; font-size: 36px;">Fig. 8: Performance of representative example.</text>
+</svg>

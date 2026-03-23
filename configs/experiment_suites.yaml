@@ -1,0 +1,15 @@
+evaluation_setup:
+  topologies: [clos_small, spine_leaf_small, fat_tree_small]
+  benchmark_families: [mct, qft, grover, rca]
+  baselines: [random_direct, average_direct, stagewise_direct, greedy_unified]
+representative_example:
+  topology: clos_small
+  circuit_family: representative
+algorithm_comparison:
+  scales: [small, medium, large, very_large]
+resource_sensitivity:
+  parameters: [data_qubits_per_qpu, comm_qubits_per_qpu, buffer_qubits_per_qpu, lookahead_depth, switch_reconfig_latency, cross_rack_latency]
+topology_comparison:
+  topologies: [clos_small, spine_leaf_small, fat_tree_small, clos_medium]
+framework_comparison:
+  baselines: [stagewise_direct, greedy_unified]

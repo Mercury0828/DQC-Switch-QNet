@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420">
+<style>text {font-family: Arial, Helvetica, sans-serif; font-size: 12px;} .title {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold;} .subtitle {font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;}</style>
+<text class="title" x="600.0" y="24" text-anchor="middle">Fig. 11 style: QDC topology gallery</text>
+<text class="subtitle" x="190" y="60" text-anchor="middle">clos_small</text>
+<rect x="280" y="100" width="50" height="114" fill="#dddddd" stroke="#333" />
+<rect x="40" y="100" width="200" height="28" fill="#f8f8f8" stroke="#555" />
+<text x="52" y="118">rack_0</text>
+<circle cx="110" cy="114" r="7" fill="#4E79A7" />
+<line x1="110" y1="114" x2="280" y2="114" stroke="#aaa" />
+<circle cx="150" cy="114" r="7" fill="#4E79A7" />
+<line x1="150" y1="114" x2="280" y2="114" stroke="#aaa" />
+<rect x="40" y="142" width="200" height="28" fill="#f8f8f8" stroke="#555" />
+<text x="52" y="160">rack_1</text>
+<circle cx="110" cy="156" r="7" fill="#4E79A7" />
+<line x1="110" y1="156" x2="280" y2="156" stroke="#aaa" />
+<circle cx="150" cy="156" r="7" fill="#4E79A7" />
+<line x1="150" y1="156" x2="280" y2="156" stroke="#aaa" />
+<rect x="40" y="184" width="200" height="28" fill="#f8f8f8" stroke="#555" />
+<text x="52" y="202">rack_2</text>
+<circle cx="110" cy="198" r="7" fill="#4E79A7" />
+<line x1="110" y1="198" x2="280" y2="198" stroke="#aaa" />
+<circle cx="150" cy="198" r="7" fill="#4E79A7" />
+<line x1="150" y1="198" x2="280" y2="198" stroke="#aaa" />
+<text class="subtitle" x="540" y="60" text-anchor="middle">spine_leaf_small</text>
+<rect x="630" y="100" width="50" height="114" fill="#dddddd" stroke="#333" />
+<rect x="390" y="100" width="200" height="28" fill="#f8f8f8" stroke="#555" />
+<text x="402" y="118">rack_0</text>
+<circle cx="460" cy="114" r="7" fill="#4E79A7" />
+<line x1="460" y1="114" x2="630" y2="114" stroke="#aaa" />
+<circle cx="500" cy="114" r="7" fill="#4E79A7" />
+<line x1="500" y1="114" x2="630" y2="114" stroke="#aaa" />
+<rect x="390" y="142" width="200" height="28" fill="#f8f8f8" stroke="#555" />
+<text x="402" y="160">rack_1</text>
+<circle cx="460" cy="156" r="7" fill="#4E79A7" />
+<line x1="460" y1="156" x2="630" y2="156" stroke="#aaa" />
+<circle cx="500" cy="156" r="7" fill="#4E79A7" />
+<line x1="500" y1="156" x2="630" y2="156" stroke="#aaa" />
+<rect x="390" y="184" width="200" height="28" fill="#f8f8f8" stroke="#555" />
+<text x="402" y="202">rack_2</text>
+<circle cx="460" cy="198" r="7" fill="#4E79A7" />
+<line x1="460" y1="198" x2="630" y2="198" stroke="#aaa" />
+<circle cx="500" cy="198" r="7" fill="#4E79A7" />
+<line x1="500" y1="198" x2="630" y2="198" stroke="#aaa" />
+<text class="subtitle" x="890" y="60" text-anchor="middle">fat_tree_small</text>
+<rect x="980" y="100" width="50" height="152" fill="#dddddd" stroke="#333" />
+<rect x="740" y="100" width="200" height="28" fill="#f8f8f8" stroke="#555" />
+<text x="752" y="118">rack_0</text>
+<circle cx="810" cy="114" r="7" fill="#4E79A7" />
+<line x1="810" y1="114" x2="980" y2="114" stroke="#aaa" />
+<circle cx="850" cy="114" r="7" fill="#4E79A7" />
+<line x1="850" y1="114" x2="980" y2="114" stroke="#aaa" />
+<rect x="740" y="142" width="200" height="28" fill="#f8f8f8" stroke="#555" />
+<text x="752" y="160">rack_1</text>
+<circle cx="810" cy="156" r="7" fill="#4E79A7" />
+<line x1="810" y1="156" x2="980" y2="156" stroke="#aaa" />
+<circle cx="850" cy="156" r="7" fill="#4E79A7" />
+<line x1="850" y1="156" x2="980" y2="156" stroke="#aaa" />
+<rect x="740" y="184" width="200" height="28" fill="#f8f8f8" stroke="#555" />
+<text x="752" y="202">rack_2</text>
+<circle cx="810" cy="198" r="7" fill="#4E79A7" />
+<line x1="810" y1="198" x2="980" y2="198" stroke="#aaa" />
+<circle cx="850" cy="198" r="7" fill="#4E79A7" />
+<line x1="850" y1="198" x2="980" y2="198" stroke="#aaa" />
+<rect x="740" y="226" width="200" height="28" fill="#f8f8f8" stroke="#555" />
+<text x="752" y="244">rack_3</text>
+<circle cx="810" cy="240" r="7" fill="#4E79A7" />
+<line x1="810" y1="240" x2="980" y2="240" stroke="#aaa" />
+<circle cx="850" cy="240" r="7" fill="#4E79A7" />
+<line x1="850" y1="240" x2="980" y2="240" stroke="#aaa" />
+</svg>

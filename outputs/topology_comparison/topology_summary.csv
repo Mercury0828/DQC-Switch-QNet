@@ -1,0 +1,5 @@
+name,runtime,objective_value,solver_time_seconds,intra_rack_epr,cross_rack_epr,distilled_epr,split_consumed,batched_epr,collective_batches,avg_epr_wait,peak_buffer,avg_buffer,wait_time,switch_reconfiguration,retry_overhead_hook,split_ratio,latency_local_gate,latency_intra_rack_epr,latency_cross_rack_epr,latency_switch_reconfiguration,latency_wait_time,latency_retry_overhead_hook,latency_distillation,topology,racks,qpus_per_rack
+clos_small,65,65.0,0.0015389799998501985,16,0,0,0,11,5,6.0,6,4.0,26.0,0,0.0,0.0,36.0,32.0,0.0,0,26.0,0.0,0.0,clos_small,3,2
+spine_leaf_small,65,65.0,0.0014760300000489224,16,0,0,0,11,5,6.0,6,4.0,26.0,0,0.0,0.0,36.0,32.0,0.0,0,26.0,0.0,0.0,spine_leaf_small,3,2
+fat_tree_small,65,65.0,0.0006534160002047429,16,0,0,0,11,5,6.0,6,4.0,26.0,0,0.0,0.0,36.0,32.0,0.0,0,26.0,0.0,0.0,fat_tree_small,4,2
+clos_medium,76,103.0,0.0007646980000117765,23,0,0,0,17,7,13.095238095238095,14,9.090909090909092,37.0,0,27.0,0.0,36.0,46.0,0.0,0,37.0,27.0,0.0,clos_medium,4,3
